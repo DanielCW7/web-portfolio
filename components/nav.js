@@ -10,10 +10,12 @@ import {
     Button, 
     Menu, 
     Drawer,
-    Box
+    Box,
+    Divider
 } from '@mui/material';
 import MenuIcon from "@mui/icons-material/Menu"
 import { useState } from 'react';
+import Link from 'next/link';
 
 const Nav = () => {
 
@@ -21,7 +23,7 @@ const Nav = () => {
 
     
     return (
-        <AppBar position="static" sx={{backgroundColor: "gray"}}>
+        <AppBar position="static" className='charcoal'>
 
                 {/* hide on tablet+ */}
                 <Container sx={{ display: {xs: "", md: "none"} }}>                        
@@ -32,9 +34,9 @@ const Nav = () => {
 
                         <Drawer anchor="left" open={isNavOpen} onClose={() => {setNavOpen(false)}}>
                             <Box pt={5} width="250px" textAlign="center" role="presentation">
-                                <Typography variant="h6" component="div"> Home </Typography>
-                                <Typography variant="h6" component="div"> Projects </Typography>
-                                <Typography variant="h6" component="div"> About </Typography>
+                                <Link onClick={() => {setNavOpen(false)}} href="/"><Typography variant="h6" component="div"> Home </Typography><Divider/></Link>
+                                <Link onClick={() => {setNavOpen(false)}}  href="/projects"><Typography variant="h6" component="div"> Projects </Typography><Divider/></Link>
+                                <Link onClick={() => {setNavOpen(false)}}  href="/about"><Typography variant="h6" component="div"> About </Typography><Divider/></Link>
                             </Box>
                         </Drawer>                
                     </Box>
@@ -48,16 +50,11 @@ const Nav = () => {
                 <Typography variant="h7" component="div" sx={{flexGrow: 1}}></Typography>
 
                     <Toolbar>
-                        <Stack direction="row" spacing={2}>
-                            <Button color="inherit"> Home </Button>
-                            <Button color="inherit"> Projects </Button>
-                            <Button color="inherit"> About </Button>
+                        <Stack direction="row" spacing={2} id="nav-menu">
+                            <Link href="/"><Button color="inherit"> Home </Button></Link>
+                            <Link href="/projects"><Button color="inherit"> Projects </Button></Link>
+                            <Link href="/about"><Button color="inherit"> About </Button></Link>
                         </Stack>
-                        <Menu id="nav-menu">
-                            <MenuItem> Home </MenuItem>
-                            <MenuItem> Projects </MenuItem>
-                            <MenuItem> About </MenuItem>
-                        </Menu>
                     </Toolbar>                    
                 </Container>
 

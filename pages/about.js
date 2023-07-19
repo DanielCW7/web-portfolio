@@ -8,16 +8,16 @@ import { Container, Box } from '@mui/material';
 import Header from "@/components/header";
 import ProjectDetails from "@/components/projectDetails";
 
-const HomePage = () => {    
+const About = () => {    
 
 
     return (
         <>
             <Header 
-                title="Daniel C. " 
-                subtitle="I'm a lifelong learner with a desire to change the world. My focus is in Javascript and ReactJs."
-                link="/projects"
-                cta="My Work"
+                title="About Me" 
+                subtitle=""
+                link=""
+                cta=""
             />
             <CardContainer/>
             <Box sx={{border: "solid red 1px"}}>
@@ -27,5 +27,5 @@ const HomePage = () => {
     )
   }
   
-  export default HomePage;
+  export default About;
   

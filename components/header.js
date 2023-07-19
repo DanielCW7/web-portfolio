@@ -1,30 +1,26 @@
 import Button from "@mui/material/Button"
 import * as React from "react";
-import laptop2 from "../images/laptop2.jpg"
+import laptop from "../images/laptop.webp"
 import { Container, Box, Typography } from '@mui/material';
+import Link from "next/link";
+// props for background image, header title, subtitle, and relevant buttons
 
+const Header = (props) => {
+    console.log(props)
 
-const Header =() => {
     return (
         <header>
             <Box sx={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${laptop2.src})`,
-                backgroundRepeat: "no-repeat",
-                position: "relative",
-                width: "100%",
-                p: {
-                    xs: 0,
-                    sm: 8,
-                    md: 18,
-                    
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${laptop.src})`,
+                minHeight: {
+                    xs: "30vh",
+                    sm: "40vh",
+                    md: "45vh",  
                 },
-                backgroundSize: 'cover',
                 backgroundPosition: 'center',  
-                backgroundAttachment: "sticky"     
-            }}>
-                <Container sx={{
-                    p:5,
-                }}>
+                p: 5   
+            }} className="w-full relative bg-cover bg-sticky bg-no-repeat flex flex-col justify-center">
+                <Container>
                     <Typography sx={{
                         fontSize: {
                             xs: "3rem", 
@@ -33,16 +29,15 @@ const Header =() => {
                         },
                         color: "#fff",
                         fontWeight: "bold"
-                    }} variant="h1"> Daniel C. Wilson </Typography>
+                    }} variant="h1"> {props?.title ?? ""} </Typography>
                     <Typography variant="overline" component="h2" sx={{color: "#fff"}} gutterBottom> 
-                        Front-end Engineer
+                        {props.link === "/" ? "Front-end Engineer" : "" }
                     </Typography> 
-                    <Typography sx={{color: "#fff"}} gutterBottom> 
-                        I'm a lifelong learner with a desire to change the world.
-                        My focus is in Javascript and ReactJs.
-                    </Typography> 
+                    <Typography sx={{color: "#fff"}} gutterBottom> {props?.subtitle ?? ""} </Typography> 
 
-                    <Button variant="contain" sx={{ mt: 5}} className="glow-btn"> My Projects </Button>
+                    { props.cta 
+                    ? <Link href={props.link}><Button variant="contain" sx={{ mt: 5}} className="glow-btn"> {props.cta} </Button></Link>
+                    : null }
                 </Container>
                
             </Box>
