@@ -13,9 +13,7 @@ const list = [
 ]
 
 function projects(list) {
-    list.map((project) => {
-        console.log(project.name)
-    })
+
 }
 const ProjectDetails = () => {
     return  (

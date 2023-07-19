@@ -7,6 +7,7 @@ import CardContainer from "@/components/cardContainer";
 import { Container, Box } from '@mui/material';
 import Header from "@/components/header";
 import ProjectDetails from "@/components/projectDetails";
+import profile from "../images/profile.jpg"
 
 const About = () => {    
 
@@ -18,9 +19,10 @@ const About = () => {
                 subtitle=""
                 link=""
                 cta=""
+                img={profile}
             />
             <CardContainer/>
-            <Box sx={{border: "solid red 1px"}}>
+            <Box>
                 <ProjectDetails/>
             </Box>
         </>

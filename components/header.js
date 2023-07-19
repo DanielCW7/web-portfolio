@@ -1,17 +1,16 @@
 import Button from "@mui/material/Button"
 import * as React from "react";
-import laptop from "../images/laptop.webp"
 import { Container, Box, Typography } from '@mui/material';
 import Link from "next/link";
 // props for background image, header title, subtitle, and relevant buttons
 
 const Header = (props) => {
-    console.log(props)
 
+    
     return (
         <header>
             <Box sx={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${laptop.src})`,
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${props.img.src})`,
                 minHeight: {
                     xs: "30vh",
                     sm: "40vh",
