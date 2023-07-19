@@ -1,19 +1,23 @@
 // _app.js
 
-import React from 'react';
+import * as React from "react";
 import '../styles/globals.css'; // Import global styles
 import { CssBaseline } from '@mui/material';
 import { Container } from '@mui/material';
+import Nav from "@/components/nav";
 
 function MyApp({ Component, pageProps }) {
   // Any additional custom logic or data fetching can be done here
 
   return (
-    <Container>
+    <>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <CssBaseline />
-        <Component {...pageProps} />
-    </Container>
+        <Nav/>
+        <Container>
+            <Component {...pageProps} />
+        </Container>
+    </>
   )
 }
 
