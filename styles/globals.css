@@ -8,3 +8,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+
+.glow-btn {
+  border-radius: 100px;
+  background-color: rgb(18, 206, 18);
+}
+
+.glow-btn:hover {
+  border-radius: 100px;
+  background-color: rgb(16, 168, 16);
+}
