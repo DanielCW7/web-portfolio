@@ -12,11 +12,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <CssBaseline />
+        <CssBaseline />\
         <Nav/>
-        <Container>
-            <Component {...pageProps} />
-        </Container>
+        <Component {...pageProps} />
     </>
   )
 }
