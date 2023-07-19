@@ -1,22 +1,53 @@
 import Button from "@mui/material/Button"
-import { Backdrop, Box, CircularProgress, Typography } from "@mui/material";
+import { Backdrop, Box, CircularProgress, List, ListItem, ListItemButton, ListItemText, Typography, Divider, AppBar, Toolbar, IconButton, MenuItem, Drawer } from "@mui/material";
 import Navbar from "@/components/nav";
 import { useState } from "react";
 import * as React from "react";
 
-function HomePage() {
+function HomePage() {    
 
-    const [open, setOpen] = React.useState(false);
-    const handleClose = () => {
-      setOpen(false);
-    };
-    const handleOpen = () => {
-      setOpen(true);
-    };
-    
+    const navItems = ["Home", "About", "Contact"]
+    const [mobileOpen, setMobileOpen] = React.useState(false);
+
+    const navDrawerToggle = () => {
+        setMobileOpen((prevState) => !prevState)
+    }
+
+    const drawer = (
+        <Box onClick={navDrawerToggle}>
+            <Typography variant="h6">
+                Daniel
+            </Typography>
+            <Divider />
+            <List>
+                {navItems.map((item) => {
+                    <ListItem key={item}>
+                        <ListItemButton>
+                            <ListItemText primary={item} />
+                        </ListItemButton>
+                    </ListItem>
+                })}
+            </List>
+        </Box>
+    )
+
+
     return (
         <>
-        <Navbar/>
+            <AppBar component="nav">
+                <Toolbar>
+                    <IconButton onClick={navDrawerToggle} color="inherit">
+                        <MenuItem />
+                    </IconButton>
+                </Toolbar>
+            </AppBar>
+            <Box component="nav">
+                <Drawer variant="temporary" open={mobileOpen} onClose={navDrawerToggle} ModalProps={{
+                    keepMounted: true
+                }}>
+                    {drawer}
+                </Drawer>
+            </Box>
             <Box>
                 <Typography sx={{p: 1}} variant="h1"> Daniel C. Wilson </Typography>
                 <Typography sx={{p: 1}} variant="h2"> Daniel C. Wilson </Typography>
@@ -29,12 +60,6 @@ function HomePage() {
                     A lifelong learner with a desire to build something amazing. 
                     Let’s connect and build something together. 
                 </Typography>
-
-                {/* creates a backdrop layer and loader */}
-                <Button variant="outlined" onClick={handleOpen}> show backdrop </Button>
-                <Backdrop sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1}} open={open} onClick={handleClose}>
-                    <CircularProgress color="inherit"/>
-                </Backdrop>
             </Box>
             
         </>
