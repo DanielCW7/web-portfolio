@@ -5,7 +5,6 @@ import Grid from "@mui/material/Grid";
 const Card = () => {
     return (
         <Grid item xs={12} sm={8} md={6}>
-            <Paper elevation={2}> card </Paper>
         </Grid>
     )
 }

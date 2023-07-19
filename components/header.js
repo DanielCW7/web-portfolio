@@ -13,7 +13,7 @@ const Header =() => {
                 position: "relative",
                 width: "100%",
                 p: {
-                    xs: 2,
+                    xs: 0,
                     sm: 8,
                     md: 18,
                     
@@ -38,11 +38,11 @@ const Header =() => {
                         Front-end Engineer
                     </Typography> 
                     <Typography sx={{color: "#fff"}} gutterBottom> 
-                        Lifelong learner with a desire to change the world. 
-                        Let’s connect and build something together. 
+                        I'm a lifelong learner with a desire to change the world.
+                        My focus is in Javascript and ReactJs.
                     </Typography> 
 
-                    <Button variant="contain" sx={{ mt: 5}} className="glow-btn"> My Work </Button>
+                    <Button variant="contain" sx={{ mt: 5}} className="glow-btn"> My Projects </Button>
                 </Container>
                
             </Box>
