@@ -5,24 +5,39 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Container } from '@mui/material';
-import Laptop from "../images/laptop.webp"
+import Link from 'next/link';
+import { Chip, Box } from '@mui/material';
 const Work = (props) => {
+
+
+    function badges(attribute) {
+        const list = attribute.map((item) => {
+            return <Chip label={item} />
+        })
+        return list
+    }
+
   return (
     <>
-        <Card sx={{ width: 345, marginX: "auto" }}>
-            <CardMedia sx={{ height: 140 }} image={`${Laptop.src}`} title="green iguana" />
+        <Card sx={{ width: 345 }} className="flex flex-col justify-between">
+            <CardMedia sx={{ height: 140 }} image={`${props.thumbnail}`} title="green iguana" />
+
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div"> {props.project} </Typography>
-                <Typography variant="body2" color="text.secondary"> {props.description} </Typography>
+                <Typography gutterBottom variant="body2" color="text.secondary"> {props.description} </Typography>
+                <Box className="flex flex-row gap-2 flex-wrap">
+                    {props?.badges ? badges(props.badges) : ""}
+                </Box>
+
             </CardContent>
-            <CardActions>
-                <Button size="small"> Source </Button>
-                <Button size="small"> Demo </Button>
+
+
+            <CardActions className="mt-auto">
+                <Link href={props?.sourceCode ?? "https://github.com/DanielCW7"}><Button size="small"> Source Code </Button></Link>
+                <Button href={props?.demo ?? "https://github.com/DanielCW7"} size="small"> Demo </Button>
             </CardActions>
         </Card>        
     </>
-
   );
 }
 
