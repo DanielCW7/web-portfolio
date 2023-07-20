@@ -8,6 +8,7 @@ import { Container, Box } from '@mui/material';
 import Header from "@/components/header";
 import ProjectDetails from "@/components/projectDetails";
 import laptop from "../images/laptop.webp"
+import AboutBlurb from "@/components/aboutBlurb";
 
 const HomePage = () => {    
 
@@ -24,6 +25,9 @@ const HomePage = () => {
             <CardContainer/>
             <Box sx={{border: "solid red 1px"}}>
                 <ProjectDetails/>
+            </Box>
+            <Box>
+                <AboutBlurb />
             </Box>
         </>
     )
