@@ -12,7 +12,7 @@ const AboutBlurb = () => {
                 so that one day work at a big tech company. 
             </Box>
             <Box className="border-2 border-red-900 flex-1"> 
-                <Image height={100} width={100} src={laptop2} className="border-2 border-blue-900"/> 
+                <Image height={100} width={100} src={laptop2} className="border-2 border-blue-900gg"/> 
             </Box>
         </Container>
     )
