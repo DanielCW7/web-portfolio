@@ -2,7 +2,7 @@ import Button from "@mui/material/Button"
 import Nav from "@/components/nav";
 import { useState } from "react";
 import * as React from "react";
-import Card from "@/components/card";
+import Card from "@/components/work";
 import CardContainer from "@/components/cardContainer";
 import { Container, Box } from '@mui/material';
 import Header from "@/components/header";
@@ -23,7 +23,6 @@ const HomePage = () => {
                 cta="My Work"
                 img={laptop}
             />
-            <CardContainer/>
             
             <Box className="flex flex-col gap-20 my-20">
                 <ProjectBlurb />

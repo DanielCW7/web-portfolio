@@ -1,5 +1,6 @@
 import Header from "@/components/header"
 import laptop2 from "../images/laptop2.jpg"
+import CardContainer from "@/components/cardContainer"
 
 
 const Projects = () => {
@@ -12,6 +13,7 @@ const Projects = () => {
             cta=""
             img={laptop2}
           />
+          <CardContainer />
         </>
     )
 }

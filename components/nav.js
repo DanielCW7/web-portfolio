@@ -43,8 +43,6 @@ const Nav = () => {
                 </Container>
 
 
-
-
                 {/* hide on mobile */}
                 <Container sx={{ display: {xs: "none", md: "flex"} }}>                        
                 <Typography variant="h7" component="div" sx={{flexGrow: 1}}></Typography>

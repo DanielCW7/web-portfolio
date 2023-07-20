@@ -1,12 +1,11 @@
-import { Button, Container } from "@mui/material";
-import Card from "./card";
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import { Container } from "@mui/material";
+import Work from "./work";
 
 const CardContainer = () => {
     return (
-        <Container> 
-
-        </Container>
+        <> 
+            <Work />
+        </>
 
     )
 }

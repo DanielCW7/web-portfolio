@@ -2,7 +2,7 @@ import Button from "@mui/material/Button"
 import Nav from "@/components/nav";
 import { useState } from "react";
 import * as React from "react";
-import Card from "@/components/card";
+import Card from "@/components/work";
 import CardContainer from "@/components/cardContainer";
 import { Container, Box } from '@mui/material';
 import Header from "@/components/header";
@@ -21,7 +21,6 @@ const About = () => {
                 cta=""
                 img={profile}
             />
-            <CardContainer/>
             <Box>
                 <ProjectDetails/>
             </Box>
