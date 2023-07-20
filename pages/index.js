@@ -9,6 +9,7 @@ import Header from "@/components/header";
 import ProjectDetails from "@/components/projectDetails";
 import laptop from "../images/laptop.webp"
 import AboutBlurb from "@/components/aboutBlurb";
+import ProjectBlurb from "@/components/projectsBlurb";
 
 const HomePage = () => {    
 
@@ -23,12 +24,12 @@ const HomePage = () => {
                 img={laptop}
             />
             <CardContainer/>
-            <Box sx={{border: "solid red 1px"}}>
-                <ProjectDetails/>
+            
+            <Box className="flex flex-col gap-20 my-20">
+                <ProjectBlurb />
+                <AboutBlurb />                
             </Box>
-            <Box>
-                <AboutBlurb />
-            </Box>
+
         </>
     )
   }
