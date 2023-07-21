@@ -3,19 +3,19 @@ import laptop2 from "../images/laptop2.jpg"
 import Work from "@/components/work"
 import { Container } from "@mui/material"
 import ProjectDetails from "@/components/projectDetails"
-import { PropaneSharp } from "@mui/icons-material"
+import profile from "../images/profile.jpg"
 
 console.log(ProjectDetails)
 
 function populate(projects) {
   const items = projects.map((item) => {
     return <Work 
-      project={item.project} 
-      description={item.description}
-      sourceCode={item.sourceCode} 
-      demo={item.demo} 
-      thumbnail={item.thumbnail} 
-      badges={item.badges} />
+      project={item?.project ?? ""} 
+      description={item?.description ?? "Coming soon!"}
+      sourceCode={item?.sourceCode ?? "https://github.com/DanielCW7"} 
+      demo={item?.demo ?? "https://github.com/DanielCW7"} 
+      thumbnail={item?.thumbnail ?? profile.src} 
+      badges={item?.badges ?? ""} />
   })
   return items
 }

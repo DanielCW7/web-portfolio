@@ -23,7 +23,6 @@ const HomePage = () => {
                 <ProjectBlurb />
                 <AboutBlurb />                
             </Box>
-
         </>
     )
   }
