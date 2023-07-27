@@ -6,19 +6,19 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --custom-green: #00FFAE;
-  --custom-dark-green: #00cf8e;
+  --custom-blue: #00ccff;
+  --custom-dark-blue: #00add8;
   --charcoal: #0c0c0c;
 }
 
 .glow-btn {
   border-radius: 100px;
-  background-color: var(--custom-dark-green);
+  background-color: var(--custom-blue);
 }
 
 .glow-btn:hover {
   border-radius: 100px;
-  background-color: var(--custom-green);
+  background-color: var(--custom-dark-blue);
 }
 
 .charcoal {

@@ -1,5 +1,5 @@
 import Header from "@/components/header"
-import laptop2 from "../images/laptop2.jpg"
+import keyboard from "../images/dt_2.webp"
 import Work from "@/components/work"
 import { Container } from "@mui/material"
 import ProjectDetails from "@/components/projectDetails"
@@ -28,7 +28,7 @@ const Projects = () => {
             subtitle="Check out some of my favorite projects! Each one played a part in making me a better developer."   
             link=""
             cta=""
-            img={laptop2}
+            img={keyboard}
           />
           <Container sx={{ 
               p: 5,
