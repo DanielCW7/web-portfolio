@@ -23,7 +23,7 @@ const Nav = () => {
 
     
     return (
-        <AppBar position="static" className='charcoal'>
+        <AppBar position="sticky" className='charcoal'>
 
                 {/* hide on tablet+ */}
                 <Container sx={{ display: {xs: "", md: "none"} }}>                        

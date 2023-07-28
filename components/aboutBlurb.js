@@ -1,14 +1,15 @@
 import { Box, Container, Typography, Item, Grid } from "@mui/material"
 import Stack from "@mui/material/Stack";
-import kb from "../images/kb_3.webp"
+import laptop2 from "../images/laptop2.jpg"
 import Image from "next/image";
 import Link from "next/link";
+import GroupIcon from '@mui/icons-material/Group';
+import BrushIcon from '@mui/icons-material/Brush';
+import DataObjectIcon from '@mui/icons-material/DataObject';
 
 const AboutBlurb = () => {
     return (
-        <Box className="bg-cover bg-fixed" sx={{ 
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${kb.src})`,
-        }}>
+        <Box className="bg-cover bg-fixed bg-gray-200">
             <Container className="gap-10 flex flex-col md:flex-row justify-center" sx={{
                 minHeight: {
                     xs: "40vh",
@@ -16,22 +17,26 @@ const AboutBlurb = () => {
                     md: "45vh",  
                 },
                 p: 5
-                
             }}>
-                <Box className="h-full flex-1 flex flex-col justify-center max-h-64 md:max-h-none rounded-2xl overflow-hidden m-auto"> 
-                    {/* <Image height="full" width="full" src={laptop2} className="rounded-2xl bg-cover"/>  */}
-                </Box>   
-
-                <Box className="flex-1 flex flex-col justify-center text-white"> 
-                    <Typography variant="h5" component="h3" gutterBottom> Area of Focus </Typography>
-                    <Typography variant="body1" className="" gutterBottom> 
-                        The bulk of my studie are centered around Javascript in addition to related frameworks and 
-                        libraries. Since my early years of development, I've been building and learning about React and 
-                        Tailwind to keep up with the times. <br/>
-                        When I'm not coding, I research web development best practices and look out for new and unique 
-                        tools to add to add to my skillset.
+                <Box className="flex-1 flex flex-col justify-center text-center"> <GroupIcon className="text-5xl mx-auto" gutterBottom />
+                    <Typography variant="h5" component="h3" gutterBottom> Teammate </Typography>
+                    <Typography variant="body1" className="text-center" gutterBottom> 
+                        Helping others, contributing expertise, and achieving greatness through teamwork.
                     </Typography> 
-                    <Link href="/projects" variant="body1"> More &rarr; </Link>
+                </Box>    
+
+                <Box className="flex-1 flex flex-col justify-center text-center"> <BrushIcon className="text-5xl mx-auto" gutterBottom />
+                    <Typography variant="h5" component="h3" gutterBottom> Artist </Typography>
+                    <Typography variant="body1" className=" text-center" gutterBottom> 
+                        Crafting digital masterpieces through intuitive interfaces and captivating visuals. 
+                    </Typography> 
+                </Box> 
+
+                <Box className="flex-1 flex flex-col justify-center text-center"> <DataObjectIcon className="text-5xl mx-auto" gutterBottom />
+                    <Typography variant="h5" component="h3" gutterBottom> Engineer </Typography>
+                    <Typography variant="body1" className=" text-center" gutterBottom> 
+                        Building robust infrastructures, weaving technology to power the web's dynamic potential.
+                    </Typography> 
                 </Box> 
             </Container>             
         </Box>

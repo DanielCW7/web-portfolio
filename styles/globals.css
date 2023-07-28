@@ -12,12 +12,10 @@
 }
 
 .glow-btn {
-  border-radius: 100px;
   background-color: var(--custom-blue);
 }
 
 .glow-btn:hover {
-  border-radius: 100px;
   background-color: var(--custom-dark-blue);
 }
 
@@ -25,3 +23,11 @@
   background-color: VAR(--charcoal);
 }
 
+@keyframes transitions {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
+}
+
+.languages {
+  animation: transitions 2s ease-in-out infinite forwards;
+}

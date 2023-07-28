@@ -1,9 +1,15 @@
-import { Box, Container, Typography, Item, Grid } from "@mui/material"
+import { Box, Container, Typography, Item, Grid, Button } from "@mui/material"
 import Stack from "@mui/material/Stack";
-import laptop2 from "../images/laptop2.jpg"
+import dt from "../images/dt_6.JPG"
 import Image from "next/image";
 import Link from "next/link";
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import EmailIcon from '@mui/icons-material/Email';
+import { Phone } from "@mui/icons-material";
 
+const animation = () => {
+
+}
 const ProjectBlurb = () => {
     return (
 
@@ -16,21 +22,24 @@ const ProjectBlurb = () => {
                 p: 5
             }}>
                 <Box className="md:hidden h-full flex-1 flex flex-col justify-center max-h-64 md:max-h-none rounded-2xl overflow-hidden m-auto"> 
-                    <Image height="full" width="full" src={laptop2} className="rounded-2xl bg-cover"/> 
+                    <Image height="full" width="full" src={dt} className="rounded-2xl bg-cover"/> 
                 </Box>  
-                <Box className="flex-1 flex flex-col justify-center"> 
-                    <Typography variant="h5" component="h3" gutterBottom> My Portfolio </Typography>
+                <Box className="flex-1 my-auto"> 
+                    <Typography variant="h5" component="h3" gutterBottom> Let's Connect </Typography>
                     <Typography variant="body1" className="" gutterBottom> 
-                        Since 2019, my journey into web engineering has been challenging and rewarding. Once I started building 
-                        and didn't stop. I'm always looking for new things to create, no matter how complex.
-                        <br/>
-                        Every time I start a project, I look at the things I can learn from it. I am a believer in always setting 
-                        new goals to achieve!
+                        I would love the chance to prove myself as a valuable asset. 
+                        If you think that I would make a good addition to your team, then let's talk! 
                     </Typography> 
-                    <Link href="/projects" variant="body1"> Projects &rarr; </Link>
+                    {/* <Typography variant="body1" className="" gutterBottom> 
+                        I'm always learning and working on my next project, but experience is the best teacher by far.
+                        If you like my projects, please don't hesitate to reach out!
+                    </Typography>  */}
+                    <Button href="/projects" variant="outlined"> <PhoneEnabledIcon /> </Button>
+                    <Button href="/projects" variant="outlined"> <EmailIcon /> </Button>
+
                 </Box>                 
                 <Box className="hidden md:flex h-full flex-1 flex-col justify-center max-h-64 md:max-h-none rounded-2xl overflow-hidden m-auto"> 
-                    <Image height="full" width="full" src={laptop2} className="rounded-2xl bg-cover"/> 
+                    <Image height="full" width="full" src={dt} className="rounded-2xl bg-cover"/> 
                 </Box>   
 
                 

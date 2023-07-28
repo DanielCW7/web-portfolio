@@ -1,5 +1,3 @@
-import laptop from "../images/laptop.webp"
-import laptop2 from "../images/laptop2.jpg"
 import Sort from "../images/Sort2.PNG"
 import Weather from "../images/Weather2.PNG"
 import Finder from "../images/github_finder.png"

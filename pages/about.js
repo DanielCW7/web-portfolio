@@ -2,6 +2,7 @@ import * as React from "react";
 import { Container, Box, Typography } from '@mui/material';
 import Header from "@/components/header";
 import laptop from "../images/laptop2.jpg"
+import Footer from "@/components/footer";
 
 const About = () => {    
 
@@ -36,9 +37,12 @@ const About = () => {
                         gone before!         
                     </Typography>
                 </Container>
-                
-          
             </Box>
+            <Box>
+
+            </Box>
+            <Footer />
+
         </>
     )
   }

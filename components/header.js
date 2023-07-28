@@ -11,7 +11,7 @@ const Header = (props) => {
         <header>
             <Box sx={{
                 backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${props.img.src})`,
-                minHeight: "50vh",
+                minHeight: "70vh",
                 backgroundPosition: 'center'
             }} className="w-full relative bg-cover bg-sticky bg-no-repeat flex flex-col justify-center">
                 <Container className="" sx={{ p:5 }}>
