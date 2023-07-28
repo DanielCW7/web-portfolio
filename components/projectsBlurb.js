@@ -34,8 +34,8 @@ const ProjectBlurb = () => {
                         I'm always learning and working on my next project, but experience is the best teacher by far.
                         If you like my projects, please don't hesitate to reach out!
                     </Typography>  */}
-                    <Button href="/projects" variant="outlined"> <PhoneEnabledIcon /> </Button>
-                    <Button href="/projects" variant="outlined"> <EmailIcon /> </Button>
+                    <Button href="/projects" variant="outlined"> EMAIL <EmailIcon className="text-lg m-auto"/> </Button>                        
+
 
                 </Box>                 
                 <Box className="hidden md:flex h-full flex-1 flex-col justify-center max-h-64 md:max-h-none rounded-2xl overflow-hidden m-auto"> 
