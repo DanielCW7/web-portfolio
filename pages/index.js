@@ -4,8 +4,8 @@ import { Container, Box } from '@mui/material';
 import Header from "@/components/header";
 import dt from "../images/dt_3.webp"
 import AboutBlurb from "@/components/aboutBlurb";
-import ProjectBlurb from "@/components/projectsBlurb";
 import Footer from "@/components/footer";
+import Outro from "@/components/outro";
 
 const HomePage = () => {    
 
@@ -22,7 +22,7 @@ const HomePage = () => {
             
             <Box className="flex flex-col gap-20">
                 <AboutBlurb />                
-                <ProjectBlurb />
+                <Outro />
             </Box>
             <Footer />
         </>

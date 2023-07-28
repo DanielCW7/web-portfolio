@@ -27,10 +27,10 @@ const Header = (props) => {
                     <Typography variant="overline" component="h2" sx={{color: "#fff"}} gutterBottom> 
                         {props.link === "/" ? "Front-end Engineer" : "" }
                     </Typography> 
-                    <Typography sx={{color: "#fff"}} gutterBottom> {props?.subtitle ?? ""} </Typography> 
+                    <Typography sx={{color: "#fff"}} > {props?.subtitle ?? ""} </Typography> 
 
                     { props.cta 
-                    ? <Link href={props.link}><Button variant="contain" sx={{ mt: 5}} className="glow-btn"> {props.cta} </Button></Link>
+                    ? <Link href={props.link}><Button variant="contain" sx={{ mt: 5}} className="glow-btn mt-5"> {props.cta} </Button></Link>
                     : null }
                 </Container>
                

@@ -18,12 +18,12 @@ const AboutBlurb = () => {
                 },
                 p: 5
             }}>
-                <Box className="flex-1 flex flex-col justify-center text-center"> <GroupIcon className="text-5xl mx-auto" gutterBottom />
-                    <Typography variant="h5" component="h3" gutterBottom> Teammate </Typography>
-                    <Typography variant="body1" className="text-center" gutterBottom> 
-                        Helping others, contributing expertise, and achieving greatness through teamwork.
+                <Box className="flex-1 flex flex-col justify-center text-center"> <DataObjectIcon className="text-5xl mx-auto" gutterBottom />
+                    <Typography variant="h5" component="h3" gutterBottom> Engineer </Typography>
+                    <Typography variant="body1" className=" text-center" gutterBottom> 
+                        Building robust infrastructures, weaving technology to power the web's dynamic potential.
                     </Typography> 
-                </Box>    
+                </Box>                    
 
                 <Box className="flex-1 flex flex-col justify-center text-center"> <BrushIcon className="text-5xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Artist </Typography>
@@ -32,10 +32,10 @@ const AboutBlurb = () => {
                     </Typography> 
                 </Box> 
 
-                <Box className="flex-1 flex flex-col justify-center text-center"> <DataObjectIcon className="text-5xl mx-auto" gutterBottom />
-                    <Typography variant="h5" component="h3" gutterBottom> Engineer </Typography>
-                    <Typography variant="body1" className=" text-center" gutterBottom> 
-                        Building robust infrastructures, weaving technology to power the web's dynamic potential.
+                <Box className="flex-1 flex flex-col justify-center text-center"> <GroupIcon className="text-5xl mx-auto" gutterBottom />
+                    <Typography variant="h5" component="h3" gutterBottom> Teammate </Typography>
+                    <Typography variant="body1" className="text-center" gutterBottom> 
+                        Helping others, contributing expertise, and achieving greatness through teamwork.
                     </Typography> 
                 </Box> 
             </Container>             
