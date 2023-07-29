@@ -15,7 +15,7 @@ const list = [
         sourceCode: "https://github.com/DanielCW7/weather-app-v1/",
         demo: "https://danielcw7.github.io/weather-app-v1/",
         thumbnail: Weather.src,
-        badges: [ "React", "JS", "HTML/CSS", "Tailwind CSS"]
+        badges: [ "React", "JS", "HTML/CSS", "Tailwind CSS"],
     },
     {
         project: "Sorting simulator",

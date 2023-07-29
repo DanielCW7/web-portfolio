@@ -1,7 +1,8 @@
 import Image from "next/image"
 import dt from "../images/aboutImages/dt_8.JPG"
 import kb from "../images/aboutImages/kb_3.webp"
-import { Container, ImageList, ImageListItem } from "@mui/material"
+
+import { Container, ImageList, ImageListItem, Skeleton } from "@mui/material"
 
 const list = [
     {

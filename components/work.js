@@ -7,6 +7,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import { Chip, Box } from '@mui/material';
+
+
 const Work = (props) => {
 
 
@@ -18,9 +20,8 @@ const Work = (props) => {
     }
 
   return (
-    <>
-        <Card sx={{ width: 345 }} className="flex flex-col justify-between">
-            <CardMedia sx={{ height: 140 }} image={`${props.thumbnail}`} title="green iguana" />
+        <Card sx={{ width: 345 }} className="flex flex-col justify-between" key={props.project} >
+            <CardMedia sx={{ height: 140 }} image={`${props.thumbnail}`} title={props.project} />
 
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div"> {props.project} </Typography>
@@ -37,7 +38,6 @@ const Work = (props) => {
                 <Button href={props?.demo ?? "https://github.com/DanielCW7"} size="small"> Demo </Button>
             </CardActions>
         </Card>        
-    </>
   );
 }
 

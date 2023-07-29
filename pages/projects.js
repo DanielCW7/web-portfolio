@@ -6,7 +6,6 @@ import ProjectDetails from "@/components/projectDetails"
 import profile from "../images/profile.jpg"
 import Footer from "@/components/footer";
 
-console.log(ProjectDetails)
 
 function populate(projects) {
   const items = projects.map((item) => {
@@ -16,7 +15,8 @@ function populate(projects) {
       sourceCode={item?.sourceCode ?? "https://github.com/DanielCW7"} 
       demo={item?.demo ?? "https://github.com/DanielCW7"} 
       thumbnail={item?.thumbnail ?? profile.src} 
-      badges={item?.badges ?? ""} />
+      badges={item?.badges ?? ""} 
+      key={item?.project ?? ""} />
   })
   return items
 }
