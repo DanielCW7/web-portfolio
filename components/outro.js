@@ -1,11 +1,7 @@
 import { Box, Container, Typography, Item, Grid, Button } from "@mui/material"
-import Stack from "@mui/material/Stack";
 import dt from "../images/dt_6.JPG"
 import Image from "next/image";
 import Link from "next/link";
-import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
-import EmailIcon from '@mui/icons-material/Email';
-import { Phone } from "@mui/icons-material";
 
 const Outro = () => {
     return (

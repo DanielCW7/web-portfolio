@@ -1,6 +1,7 @@
 import Image from "next/image"
 import dt from "../images/aboutImages/dt_8.JPG"
 import kb from "../images/aboutImages/kb_3.webp"
+import dog from "../images/aboutImages/dog.webp"
 
 import { Container, ImageList, ImageListItem, Skeleton } from "@mui/material"
 
@@ -14,21 +15,9 @@ const list = [
         alt: "keyboard"
     },
     {
-        img: kb.src,
+        img: dog.src,
         alt: "keyboard"
-    },
-    {
-        img: dt.src,
-        alt: "working at my desk",
-    },
-    {
-        img: dt.src,
-        alt: "working at my desk",
-    },
-    {
-        img: dt.src,
-        alt: "working at my desk",
-    },
+    }
 ]
 
 function populate(images) {

@@ -42,9 +42,9 @@ const Projects = () => {
               gridGap: "32px",
               justifyItems: "center"
             }}>
-            {/* <Work project="Weather App" description="Check out some of my favorite projects! Each one played a part in making me a better developer. adasdasdasdasdasdsa"/> */}
-            { ProjectDetails ? populate(ProjectDetails) : "Still working on this page!"}
-          </Container>
+              {/* <Work project="Weather App" description="Check out some of my favorite projects! Each one played a part in making me a better developer. adasdasdasdasdasdsa"/> */}
+              { ProjectDetails ? populate(ProjectDetails) : "Still working on this page!"}
+            </Container>
           <Footer />
 
         </>
