@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const BuildingBlock = () => {
     return (
-        <Box className="bg-cover bg-fixed bg-gray-200">
+        <Box className="bg-cover bg-fixed">
             <Container className="gap-10 flex flex-col md:flex-row justify-center" sx={{
                 minHeight: {
                     xs: "40vh",
@@ -13,11 +13,10 @@ const BuildingBlock = () => {
                 },
                 p: 5
             }}>
-                <Box className="flex-1 flex flex-col justify-center text-center">
-                    <Typography variant="h5" component="h3" gutterBottom> Engineer </Typography>
-                    <Typography variant="body1" className=" text-center" gutterBottom> 
-                        Building robust infrastructures, weaving technology to power the web's dynamic potential.
-                    </Typography> 
+                <Box className="flex-1 flex flex-col justify-center text-center ">
+                    {/* different font type? */}
+                    {/* "typewriter" function on w3schools */}
+                    <Typography className="font-black" variant="h1" component="h2" gutterBottom> I am "motivated" </Typography>
                 </Box>                    
             </Container>             
         </Box>
