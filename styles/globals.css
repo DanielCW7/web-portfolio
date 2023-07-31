@@ -6,9 +6,12 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --custom-blue: #00ccff;
-  --custom-dark-blue: #00add8;
-  --charcoal: #0c0c0c;
+  --custom-blue: rgb(0, 204, 255);
+  --custom-dark-blue: rgb(0, 173, 216);
+  --custom-red: rgb(216, 43, 0);
+  --charcoal: rgb(12, 12, 12);
+  --test-color-1: rgb(4, 251, 226);
+  --test-color-2: rgb(251, 4, 29);
 }
 
 .glow-btn {

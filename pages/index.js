@@ -6,6 +6,7 @@ import dt from "../images/dt_3.webp"
 import AboutBlurb from "@/components/aboutBlurb";
 import Footer from "@/components/footer";
 import Outro from "@/components/outro";
+import BuildingBlock from "../components/buildingBlock";
 
 const HomePage = () => {    
 
@@ -19,7 +20,7 @@ const HomePage = () => {
                 cta="My Work"
                 img={dt}
             />
-            
+            <BuildingBlock />
             <Box className="flex flex-col gap-20">
                 <AboutBlurb />                
                 <Outro />
