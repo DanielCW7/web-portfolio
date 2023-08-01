@@ -23,12 +23,17 @@
 }
 
 .charcoal {
-  background-color: VAR(--charcoal);
+  background-color: var(--charcoal);
 }
 
-@keyframes transitions {
-  0% { transform: rotate(0deg) }
-  100% { transform: rotate(360deg) }
+@keyframes fading {
+  0% { opacity: 0;}
+  50% { opacity: 1;}
+  100% { opacity: 0;}
+}
+
+.fade-in-out {
+  animation: fading 4s ease-in-out infinite;
 }
 
 .languages {
