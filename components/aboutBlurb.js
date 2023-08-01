@@ -1,7 +1,4 @@
-import { Box, Container, Typography, Item, Grid } from "@mui/material"
-import Stack from "@mui/material/Stack";
-import laptop2 from "../images/laptop2.jpg"
-import Image from "next/image";
+import { Box, Container, Typography, Card } from "@mui/material"
 import Link from "next/link";
 import GroupIcon from '@mui/icons-material/Group';
 import BrushIcon from '@mui/icons-material/Brush';
