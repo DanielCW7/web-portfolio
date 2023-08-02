@@ -2,7 +2,6 @@ import * as React from "react";
 import { Container, Box, Typography } from '@mui/material';
 import Header from "@/components/header";
 import laptop from "../images/laptop2.jpg"
-import Footer from "@/components/footer";
 import ImageTiles from "@/components/imageTiles";
 
 const About = () => {    
@@ -43,8 +42,6 @@ const About = () => {
 
             </Box>
             <ImageTiles />
-            <Footer />
-
         </>
     )
   }

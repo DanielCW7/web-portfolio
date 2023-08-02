@@ -4,8 +4,6 @@ import Work from "@/components/work"
 import { Container } from "@mui/material"
 import ProjectDetails from "@/components/projectDetails"
 import profile from "../images/profile.jpg"
-import Footer from "@/components/footer";
-
 
 function populate(projects) {
   const items = projects.map((item) => {
@@ -45,8 +43,6 @@ const Projects = () => {
               {/* <Work project="Weather App" description="Check out some of my favorite projects! Each one played a part in making me a better developer. adasdasdasdasdasdsa"/> */}
               { ProjectDetails ? populate(ProjectDetails) : "Still working on this page!"}
             </Container>
-          <Footer />
-
         </>
     )
 }

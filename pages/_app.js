@@ -4,6 +4,7 @@ import * as React from "react";
 import '../styles/globals.css'; // Import global styles
 import { CssBaseline } from '@mui/material';
 import Nav from "@/components/nav";
+import Footer from "@/components/footer";
 
 function MyApp({ Component, pageProps }) {
   // Any additional custom logic or data fetching can be done here
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
         <CssBaseline />
         <Nav/>
         <Component {...pageProps} />
+        <Footer />
 
     </>
   )

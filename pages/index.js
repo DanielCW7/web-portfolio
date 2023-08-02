@@ -1,15 +1,14 @@
-import { useState } from "react";
 import * as React from "react";
 import { Container, Box } from '@mui/material';
 import Header from "@/components/header";
 import dt from "../images/dt_3.webp"
 import AboutBlurb from "@/components/aboutBlurb";
-import Footer from "@/components/footer";
 import Outro from "@/components/outro";
 import BuildingBlock from "../components/buildingBlock";
 
 const HomePage = () => {    
 
+    
 
     return (
         <>
@@ -20,12 +19,12 @@ const HomePage = () => {
                 cta="My Work"
                 img={dt}
             />
-            <BuildingBlock />
+
             <Box className="flex flex-col gap-20">
                 <AboutBlurb />                
-                <Outro />
+                <BuildingBlock />
+                <Outro />  
             </Box>
-            <Footer />
         </>
     )
   }

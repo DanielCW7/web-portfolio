@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Box, Container, Typography } from "@mui/material";
-
+import anime from "animejs";
 const adjectives = ["versatile", "ambitious", "adaptable", "reliable"];
 
 const BuildingBlock = () => {
@@ -19,6 +19,7 @@ const BuildingBlock = () => {
     setCurrentAdjective(adjectives[index]);
   }, [index]);
 
+
   return (
     <Box className="bg-cover bg-fixed">
       <Container className="gap-10 flex flex-col md:flex-row justify-center" sx={{
@@ -31,7 +32,7 @@ const BuildingBlock = () => {
       }}>
         <Box className="flex-1 flex flex-col justify-center text-center ">
           <Typography className="font-black" variant="h1" component="h2" gutterBottom>
-            I am <span className="fade-in-out">{currentAdjective}</span>
+            I am <span >{currentAdjective}</span>
           </Typography>
         </Box>                    
       </Container>             
