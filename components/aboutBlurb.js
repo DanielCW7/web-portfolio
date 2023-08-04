@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Card } from "@mui/material"
+import { Box, Container, Typography, Card, Button } from "@mui/material"
 import Link from "next/link";
 import GroupIcon from '@mui/icons-material/Group';
 import BrushIcon from '@mui/icons-material/Brush';
@@ -6,7 +6,7 @@ import DataObjectIcon from '@mui/icons-material/DataObject';
 
 const AboutBlurb = () => {
     return (
-        <Box className="bg-cover bg-fixed bg-gray-200">
+        <Box className="flex flex-col justify-center bg-cover bg-fixed bg-gray-200">
             <Container className="gap-10 flex flex-col md:flex-row justify-center" sx={{
                 minHeight: {
                     xs: "40vh",
@@ -35,7 +35,9 @@ const AboutBlurb = () => {
                         Helping others, contributing expertise, and achieving greatness through teamwork.
                     </Typography> 
                 </Box> 
-            </Container>             
+
+            </Container>            
+
         </Box>
     )
 }
