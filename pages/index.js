@@ -4,7 +4,7 @@ import Header from "@/components/header";
 import dt from "../images/dt_3.webp"
 import AboutBlurb from "@/components/aboutBlurb";
 import Outro from "@/components/outro";
-import BuildingBlock from "../components/buildingBlock";
+import TypingSection from "../components/typingSection";
 
 const HomePage = () => {    
 
@@ -20,9 +20,10 @@ const HomePage = () => {
                 img={dt}
             />
 
-            <Box className="flex flex-col gap-20">
-                <AboutBlurb />                                
-                <BuildingBlock />
+            <Box className="flex flex-col">
+                <AboutBlurb />    
+                <div className="polygon border-2 bg-gray-200"></div>                            
+                <TypingSection />
                 <Outro /> 
             </Box>
         </>

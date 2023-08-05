@@ -1,12 +1,11 @@
 import { useState, useEffect, use } from "react";
 import { Box, Container, Typography } from "@mui/material";
 
-const BuildingBlock = () => {
+const typingSection = () => {
 
-let position = 0
 const adjectives = ["versatile.", "ambitious.", "adaptable.", "reliable."];
-const [word, changeWord] = useState(adjectives[position])
 
+// types the word out 
 const typewriter = async (target, currentWord) => {
     return new Promise(resolve => {
         for (let i = 0; i < currentWord.length; i++) {
@@ -20,6 +19,7 @@ const typewriter = async (target, currentWord) => {
     });
 }
 
+// deletes current word
 const deleting = async (target, currentWord) => {
     return new Promise(resolve => {
         for (let i = currentWord.length; i >= 0; i--) {
@@ -33,6 +33,7 @@ const deleting = async (target, currentWord) => {
     });
 }
 
+// goes from typing to deleting and then
 const typingLoop = async (target) => {
     for (const word of adjectives) {
         await typewriter(target, word);
@@ -49,7 +50,7 @@ useEffect(() => {
 
 
   return (
-    <Box className="bg-cover bg-fixed">
+    <Box className="bg-cover bg-fixed my-20">
       <Container className="gap-10 flex flex-col md:flex-row justify-center" sx={{
         minHeight: {
           xs: "40vh",
@@ -74,4 +75,4 @@ useEffect(() => {
   );
 };
 
-export default BuildingBlock;
+export default typingSection;

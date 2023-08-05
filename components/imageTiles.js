@@ -43,7 +43,6 @@ const ImageTiles = () => {
     return (
         <Container className="mb-10">
             <ImageList cols={3} sx={{ }}>
-                {/* <ImageListItem><Image src={dt} width={100} height={100} /></ImageListItem> */}
                 {populate(list)}
             </ImageList>
         </Container>

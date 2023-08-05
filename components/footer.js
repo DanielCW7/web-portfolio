@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
     return (
-        <Box className='charcoal py-5'>
+        <Box className='charcoal py-5 mt-20'>
             <Container className="flex flex-row">
                 <Box className="flex-1 flex">
                     <Typography variant="body2" className="text-white"> Dev.danielcw@gmail.com </Typography>
