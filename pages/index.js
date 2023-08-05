@@ -21,9 +21,9 @@ const HomePage = () => {
             />
 
             <Box className="flex flex-col gap-20">
-                <AboutBlurb />                
+                <AboutBlurb />                                
                 <BuildingBlock />
-                <Outro />  
+                <Outro /> 
             </Box>
         </>
     )

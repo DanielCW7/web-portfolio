@@ -32,10 +32,19 @@
   100% { opacity: 0;}
 }
 
+
 .typewriter::after {
   content: "";
   margin-left: 25px;
   border-right: solid var(--custom-blue) 10px;
   animation: blinking 1s infinite forwards;
-  
+}
+
+.polygon {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
+  background-color: #fff;
+  border: solid #fff 1px;
+  height: 150px;
+  width: 101%;
+  margin-bottom: -1px;
 }

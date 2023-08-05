@@ -4,7 +4,7 @@ import { Box, Container, Typography } from "@mui/material";
 const BuildingBlock = () => {
 
 let position = 0
-const adjectives = ["versatile", "ambitious", "adaptable", "reliable"];
+const adjectives = ["versatile.", "ambitious.", "adaptable.", "reliable."];
 const [word, changeWord] = useState(adjectives[position])
 
 const typewriter = async (target, currentWord) => {
@@ -61,9 +61,9 @@ useEffect(() => {
         <Box className="flex-1 flex flex-col justify-center text-center">
           <Typography className="font-black" variant="h1" component="h2" gutterBottom sx={{
             fontSize: {
-                // xs: "3rem",
-                // sm: "4rem",
-                md: "auto"
+                xs: "3rem",
+                md: "4rem",
+                lg: "5rem"
             }
           }}>
             I am <span className="typewriter transition-all"></span>

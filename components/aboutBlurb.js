@@ -35,8 +35,8 @@ const AboutBlurb = () => {
                         Helping others, contributing expertise, and achieving greatness through teamwork.
                     </Typography> 
                 </Box> 
-
             </Container>            
+<div className="polygon"></div>
 
         </Box>
     )
