@@ -25,3 +25,17 @@
 .charcoal {
   background-color: var(--charcoal);
 }
+
+@keyframes blinking {
+  0% { opacity: 0 }
+  50% { opacity: 1;}
+  100% { opacity: 0;}
+}
+
+.typewriter::after {
+  content: "";
+  margin-left: 25px;
+  border-right: solid var(--custom-blue) 10px;
+  animation: blinking 1s infinite forwards;
+  
+}

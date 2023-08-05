@@ -1,40 +1,51 @@
 import { useState, useEffect, use } from "react";
 import { Box, Container, Typography } from "@mui/material";
-const adjectives = ["versatile", "ambitious", "adaptable", "reliable"];
 
 const BuildingBlock = () => {
-  // const [currentAdjective, setCurrentAdjective] = useState(adjectives[0]);
-  // const [index, setIndex] = useState(0);
 
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setIndex((prevIndex) => (prevIndex + 1) % adjectives.length);
-  //   }, 6000);
+let position = 0
+const adjectives = ["versatile", "ambitious", "adaptable", "reliable"];
+const [word, changeWord] = useState(adjectives[position])
 
-  //   return () => clearInterval(intervalId);
-  // }, []);
+const typewriter = async (target, currentWord) => {
+    return new Promise(resolve => {
+        for (let i = 0; i < currentWord.length; i++) {
+            setTimeout(() => {
+                target.innerHTML += currentWord[i];
+                if (i === currentWord.length - 1) {
+                    resolve();
+                }
+            }, 100 * i);
+        }
+    });
+}
 
-  // useEffect(() => {
-  //   setCurrentAdjective(adjectives[index]);
-  // }, [index]);
+const deleting = async (target, currentWord) => {
+    return new Promise(resolve => {
+        for (let i = currentWord.length; i >= 0; i--) {
+            setTimeout(() => {
+                target.innerHTML = target.innerHTML.slice(0, -1);
+                if (i === 0) {
+                    resolve();
+                }
+            }, 100 * (currentWord.length - i));
+        }
+    });
+}
 
-  
-const [word, changeWord] = useState(adjectives[0])
+const typingLoop = async (target) => {
+    for (const word of adjectives) {
+        await typewriter(target, word);
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        await deleting(target, word);
+    }
+    typingLoop(target);
+}
 
 useEffect(() => {
-  function adj() {
     const target = document.querySelector(".typewriter");
-
-    // types out the entire word and then exits the function - need to create a delete counterpart and then change the word, restarting the function
-    for(let i = 0; i < word.length; i++) {
-      setTimeout(() => {
-        target.innerHTML += word[i]
-      }, 250 * i)
-    }
-  } 
-  
-  adj()
-})
+    typingLoop(target);
+}, []);
 
 
   return (
@@ -48,8 +59,14 @@ useEffect(() => {
         p: 5
       }}>
         <Box className="flex-1 flex flex-col justify-center text-center">
-          <Typography className="font-black" variant="h1" component="h2" gutterBottom>
-            I am <span className="typewriter"></span>
+          <Typography className="font-black" variant="h1" component="h2" gutterBottom sx={{
+            fontSize: {
+                // xs: "3rem",
+                // sm: "4rem",
+                md: "auto"
+            }
+          }}>
+            I am <span className="typewriter transition-all"></span>
           </Typography>
         </Box>                    
       </Container>             
