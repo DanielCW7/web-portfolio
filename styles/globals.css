@@ -14,17 +14,10 @@
   --test-color-2: rgb(251, 4, 29);
 }
 
-.glow-btn {
-  background-color: var(--custom-blue);
-}
+.glow-btn { background-color: var(--custom-blue); }
+.glow-btn:hover { background-color: var(--custom-dark-blue); }
 
-.glow-btn:hover {
-  background-color: var(--custom-dark-blue);
-}
-
-.charcoal {
-  background-color: var(--charcoal);
-}
+.charcoal { background-color: var(--charcoal); }
 
 /* controls the typing sections blinking animation */
 @keyframes blinking {
@@ -41,9 +34,14 @@
 }
 
 /* polygon section divider */
-.polygon {
+.polygon,
+.polygon2 {
   clip-path: polygon(50% 100%, 0 0, 100% 0);
-  height: 150px;
   width: 100%;
   margin-top: -1px;
+}
+
+.polygon2 {
+  clip-path: polygon(50% 100%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+  margin-bottom: -1px;
 }

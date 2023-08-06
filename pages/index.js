@@ -5,6 +5,7 @@ import dt from "../images/dt_3.webp"
 import AboutBlurb from "@/components/aboutBlurb";
 import Outro from "@/components/outro";
 import TypingSection from "../components/typingSection";
+import TechStack from "@/components/techStack";
 
 const HomePage = () => {    
 
@@ -21,8 +22,10 @@ const HomePage = () => {
             />
 
             <Box className="flex flex-col">
+                <TechStack />
+                <div className="polygon2 border-2 bg-gray-200 h-16 md:h-32"></div>                            
                 <AboutBlurb />    
-                <div className="polygon border-2 bg-gray-200"></div>                            
+                <div className="polygon border-2 bg-gray-200 h-16 md:h-32"></div>                            
                 <TypingSection />
                 <Outro /> 
             </Box>
