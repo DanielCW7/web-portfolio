@@ -6,18 +6,9 @@ import dog from "../images/aboutImages/dog.webp"
 import { Container, ImageList, ImageListItem, Skeleton } from "@mui/material"
 
 const list = [
-    {
-        img: dt.src,
-        alt: "working at my desk",
-    },
-    {
-        img: kb.src,
-        alt: "keyboard"
-    },
-    {
-        img: dog.src,
-        alt: "keyboard"
-    }
+    { img: dt.src, alt: "working at my desk" },
+    { img: kb.src, alt: "my keyboard" },
+    { img: dog.src, alt: "my dog" }
 ]
 
 function populate(images) {

@@ -27,7 +27,7 @@ const Outro = () => {
                         I'm always learning and working on my next project, but experience is the best teacher by far.
                         If you like my projects, please don't hesitate to reach out!
                     </Typography>  */}
-                    <Button href="/projects" variant="outlined" className="mt-5"> contact </Button>                        
+                    <Button href="mailto:dev.danielcw@gmail.com" variant="outlined" className="mt-5"> contact </Button>                        
 
 
                 </Box>                 

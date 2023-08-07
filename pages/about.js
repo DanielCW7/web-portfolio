@@ -38,9 +38,6 @@ const About = () => {
                     </Typography>
                 </Container>
             </Box>
-            <Box>
-
-            </Box>
             <ImageTiles />
         </>
     )
