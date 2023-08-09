@@ -5,7 +5,7 @@ import DataObjectIcon from '@mui/icons-material/DataObject';
 
 const AboutBlurb = () => {
     return (
-        <Box className="flex flex-col justify-center bg-cover bg-fixed bg-gray-200">
+        <Box className="flex flex-col justify-center bg-cover bg-fixed shadow">
             <Container className="gap-10 flex flex-col md:flex-row justify-center" sx={{
                 minHeight: {
                     xs: "40vh",
@@ -14,7 +14,7 @@ const AboutBlurb = () => {
                 },
                 p: 5
             }}>
-                <Box className="flex-1 flex flex-col justify-center text-center"> 
+                <Box className="flex-1 flex flex-col justify-center text-center text-white"> 
                     <DataObjectIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Developer </Typography>
                     <Typography variant="body1" className=" text-center" gutterBottom> 
@@ -22,7 +22,7 @@ const AboutBlurb = () => {
                     </Typography> 
                 </Box>                    
 
-                <Box className="flex-1 flex flex-col justify-center text-center"> 
+                <Box className="flex-1 flex flex-col justify-center text-center text-white"> 
                     <BrushIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Designer </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 
@@ -30,7 +30,7 @@ const AboutBlurb = () => {
                     </Typography> 
                 </Box> 
 
-                <Box className="flex-1 flex flex-col justify-center text-center"> 
+                <Box className="flex-1 flex flex-col justify-center text-center text-white"> 
                     <GroupIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Team Player </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 

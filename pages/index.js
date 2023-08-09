@@ -21,13 +21,23 @@ const HomePage = () => {
                 img={dt}
             />
 
-            <Box className="flex flex-col">
-                <TechStack />
-                <div className="polygon2 border-2 bg-gray-200 h-16 md:h-32"></div>                            
-                <AboutBlurb />    
-                <div className="polygon border-2 bg-gray-200 h-16 md:h-32"></div>                            
-                <TypingSection />
-                <Outro /> 
+            <Box className="flex flex-col radial">
+                <Box className="bg-white">
+                    <TechStack />
+                </Box>
+                <Box className="bg-white">
+                    <div className="polygon2 radial h-16 md:h-32"></div>
+                </Box> 
+                <AboutBlurb />                  
+                <Box className="bg-white">
+                    <div className="polygon radial h-16 md:h-32"></div> 
+                </Box>  
+                <Box className="bg-white">
+                    <TypingSection />                  
+                </Box>
+                <Box className="bg-white">                         
+                    <Outro /> 
+                </Box>
             </Box>
         </>
     )

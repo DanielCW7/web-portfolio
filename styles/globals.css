@@ -45,3 +45,15 @@
   clip-path: polygon(50% 100%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
   margin-bottom: -1px;
 }
+
+
+.radial {
+  margin: -2px 0px;
+  padding: 0;
+  background: linear-gradient(rgba(0,86,187,1) 0%, #00ccff 100%);
+  background-attachment: fixed;
+}
+
+.shadow {
+  text-shadow: 1px 1px 2px #000;
+}
