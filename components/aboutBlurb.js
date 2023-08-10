@@ -2,11 +2,29 @@ import { Box, Container, Typography, Card, Button } from "@mui/material"
 import GroupIcon from '@mui/icons-material/Group';
 import BrushIcon from '@mui/icons-material/Brush';
 import DataObjectIcon from '@mui/icons-material/DataObject';
+import { useState, useRef, useEffect } from "react";
 
 const AboutBlurb = () => {
+
+    const [isIntersecting, setIsIntersecting] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(        
+            ([entry]) => {
+                setIsIntersecting(entry.isIntersecting)
+            },
+            { rootMargin: "-300px"}
+        );
+        console.log(isIntersecting)
+        observer.observe(ref.current);
+        return () => observer.disconnect()
+    }, [])
+
+
     return (
         <Box className="flex flex-col justify-center bg-cover bg-fixed shadow">
-            <Container className="gap-10 flex flex-col md:flex-row justify-center" sx={{
+            <Container className="gap-10 flex flex-col md:flex-row justify-center" id="threeTier" ref={ref} sx={{
                 minHeight: {
                     xs: "40vh",
                     sm: "40vh",

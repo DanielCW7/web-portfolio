@@ -57,3 +57,16 @@
 .shadow {
   text-shadow: 1px 1px 2px #000;
 }
+
+
+/* scroll animation */
+
+#threeTier div {
+  transform: translate(10px);
+  opacity: 0;
+}
+
+.appear {
+  opacity: 1;
+}
+/* states of animation ^ freecodecamp scrolling-into-view logic */
