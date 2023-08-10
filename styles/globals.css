@@ -62,8 +62,8 @@
 /* scroll animation */
 
 #threeTier div {
-  transform: translate(10px);
-  opacity: 0;
+  /* transform: translate(10px);
+  opacity: 0; */
 }
 
 .appear {
