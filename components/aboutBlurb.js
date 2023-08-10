@@ -27,14 +27,15 @@ const AboutBlurb = () => {
 
     useEffect(() => {
         if(isIntersecting) {
-            console.log(isIntersecting)    
-            
+
             anime({
                 targets: ".sections",
-                translateY: 0,
+                translateY: 20,
                 opacity: 1,
-                delay: anime.stagger(100)
+                delay: anime.stagger(150),
+                easing: "easeOutExpo"
             })
+
         }
     }, [isIntersecting])
 
@@ -51,7 +52,7 @@ const AboutBlurb = () => {
                 },
                 p: 5
             }}>
-                <Box className="flex-1 flex flex-col justify-center text-center text-white sections translate-y-10 opacity-0"> 
+                <Box className="flex-1 flex flex-col justify-center text-center text-white sections opacity-0"> 
                     <DataObjectIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Developer </Typography>
                     <Typography variant="body1" className=" text-center" gutterBottom> 
@@ -59,7 +60,7 @@ const AboutBlurb = () => {
                     </Typography> 
                 </Box>                    
 
-                <Box className="flex-1 flex flex-col justify-center text-center text-white sections translate-y-10 opacity-0"> 
+                <Box className="flex-1 flex flex-col justify-center text-center text-white sections opacity-0"> 
                     <BrushIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Designer </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 
@@ -67,7 +68,7 @@ const AboutBlurb = () => {
                     </Typography> 
                 </Box> 
 
-                <Box className="flex-1 flex flex-col justify-center text-center text-white sections translate-y-10 opacity-0"> 
+                <Box className="flex-1 flex flex-col justify-center text-center text-white sections opacity-0"> 
                     <GroupIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Team Player </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 
