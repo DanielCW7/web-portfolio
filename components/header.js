@@ -4,12 +4,29 @@ import { Container, Box, Typography } from '@mui/material';
 import Link from "next/link";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import anime from "animejs";
+import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 
 const Header = (props) => {
 
+    useEffect(() => {
+            anime({
+                targets: "#title",
+                keyframes: [
+                    {translateX: 50, opacity: 0},
+                    {translateX: 0, opacity: 1}
+                ],
+                easing: "easeOutExpo",
+                loop: false
+            })
+
+            
+    }, [])
     
     return (
         <header>
+            {/* <Image src={props.img.src} width={500} height={500} className="absolute z-10" /> */}
             <Box sx={{
                 backgroundImage: `linear-gradient(rgb(12, 12, 12, .7), rgb(12, 12, 12, .7)), url(${props.img.src})`,
                 minHeight: "70vh",
@@ -25,9 +42,9 @@ const Header = (props) => {
                         },
                         color: "#fff",
                         fontWeight: "bold"
-                    }} variant="h1"> {props?.title ?? ""} </Typography>
+                    }} variant="h1" id="title" className="opacity-0"> {props?.title ?? ""} </Typography>
 
-                    <Typography variant="overline" component="h2" sx={{color: "#fff"}} gutterBottom> 
+                    <Typography variant="overline" component="h2" className="text-white" gutterBottom id="subtitle"> 
                         {props.link === "/" ? "Front-end Engineer" : "" }
                     </Typography> 
                     <Typography sx={{color: "#fff"}} gutterBottom> {props?.subtitle ?? ""} </Typography> 
