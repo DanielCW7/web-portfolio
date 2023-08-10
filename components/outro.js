@@ -14,6 +14,7 @@ const Outro = () => {
                 },
                 p: 5
             }}>
+
                 <Box className="md:hidden h-full flex-1 flex flex-col justify-center max-h-64 md:max-h-none rounded-2xl overflow-hidden m-auto"> 
                     <Image height="full" width="full" src={dt} className="rounded-2xl bg-cover"/> 
                 </Box>  
@@ -35,7 +36,6 @@ const Outro = () => {
                     <Image height="full" width="full" src={dt} className="rounded-2xl bg-cover"/> 
                 </Box>   
 
-                
             </Container>            
     )
 }

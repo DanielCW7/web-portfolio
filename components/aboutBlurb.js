@@ -3,6 +3,8 @@ import GroupIcon from '@mui/icons-material/Group';
 import BrushIcon from '@mui/icons-material/Brush';
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import { useState, useRef, useEffect } from "react";
+import anime from "animejs";
+
 
 const AboutBlurb = () => {
 
@@ -16,15 +18,30 @@ const AboutBlurb = () => {
             },
             { rootMargin: "-300px"}
         );
-        console.log(isIntersecting)
+        console.log(isIntersecting, ref.current)
         observer.observe(ref.current);
         return () => observer.disconnect()
     }, [])
 
+    useEffect(() => {
+        if(isIntersecting) {
+            console.log(isIntersecting)    
+            
+            anime({
+                targets: ".sections",
+                translateY: 0,
+                opacity: 1,
+                delay: anime.stagger(100)
+            })
+        }
+    }, [isIntersecting])
+
+
+
 
     return (
         <Box className="flex flex-col justify-center bg-cover bg-fixed shadow">
-            <Container className="gap-10 flex flex-col md:flex-row justify-center" id="threeTier" ref={ref} sx={{
+            <Container className="gap-10 flex flex-col md:flex-row justify-center" ref={ref} sx={{
                 minHeight: {
                     xs: "40vh",
                     sm: "40vh",
@@ -32,7 +49,7 @@ const AboutBlurb = () => {
                 },
                 p: 5
             }}>
-                <Box className="flex-1 flex flex-col justify-center text-center text-white"> 
+                <Box className="flex-1 flex flex-col justify-center text-center text-white sections translate-y-10 opacity-0"> 
                     <DataObjectIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Developer </Typography>
                     <Typography variant="body1" className=" text-center" gutterBottom> 
@@ -40,7 +57,7 @@ const AboutBlurb = () => {
                     </Typography> 
                 </Box>                    
 
-                <Box className="flex-1 flex flex-col justify-center text-center text-white"> 
+                <Box className="flex-1 flex flex-col justify-center text-center text-white sections translate-y-10 opacity-0"> 
                     <BrushIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Designer </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 
@@ -48,7 +65,7 @@ const AboutBlurb = () => {
                     </Typography> 
                 </Box> 
 
-                <Box className="flex-1 flex flex-col justify-center text-center text-white"> 
+                <Box className="flex-1 flex flex-col justify-center text-center text-white sections translate-y-10 opacity-0"> 
                     <GroupIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Team Player </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 

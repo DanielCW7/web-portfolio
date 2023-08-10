@@ -50,7 +50,7 @@ useEffect(() => {
 
 
   return (
-    <Box className="bg-cover bg-fixed my-20">
+    <Box className="bg-cover bg-fixed my-10 md:my-20">
       <Container className="gap-10 flex flex-col md:flex-row justify-center" sx={{
         minHeight: {
           xs: "40vh",
