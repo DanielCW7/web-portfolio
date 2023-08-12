@@ -1,5 +1,5 @@
 import Header from "@/components/header"
-import keyboard from "../images/dt_2.webp"
+import keyboard from "../images/kb_1.webp"
 import Work from "@/components/work"
 import { Container } from "@mui/material"
 import ProjectDetails from "@/components/projectDetails"
