@@ -53,18 +53,25 @@ const Header = (props) => {
             easing: "easeOutExpo",
         }, 250)
 
-            
+        .add({
+            targets: "#cta",
+            keyframes: [
+                {translateY: 50, opacity: 0},
+                {translateY: 0, opacity: 1,}
+            ]
+        }, 350)           
     }, [])
     
     return (
         <header className="min-h-70 overflow-hidden">
-            {/* <Image src={props.img.src} width={500} height={500} className="absolute z-10" /> */}
             <Box sx={{
                 // backgroundImage: `linear-gradient(rgb(12, 12, 12, .7), rgb(12, 12, 12, .7)), url(${props.img.src})`,
                 minHeight: "70vh",
             }} className="w-full relative bg-cover bg-sticky bg-no-repeat flex flex-col justify-center">
                 
-                <Image src={props.img} layout="responsive" className="absolute object-cover header_Img" />
+                <Image src={props.img} fill={true} className="object-cover header_Img" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70 pointer-events-none"></div>
+
                 <Container sx={{ p:5 }}>
                     <Typography sx={{
                         fontSize: {
@@ -85,7 +92,7 @@ const Header = (props) => {
                         <Link href="https://www.linkedin.com/in/daniel-connor-wilson-a67706177"><LinkedInIcon id="link2" className="text-white relative opacity-0" /></Link>
                     </Box>
                     { props.cta 
-                    ? <Link href={props.link}><Button id="cta" variant="contain" sx={{ mt: 5}} className="glow-btn mt-5"> {props.cta} </Button></Link>
+                    ? <Link href={props.link}><Button id="cta" variant="contain" sx={{ mt: 5 }} className="glow-btn mt-5 opacity-0"> {props.cta} </Button></Link>
                     : null }
                 </Container>
 
