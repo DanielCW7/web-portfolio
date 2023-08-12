@@ -68,7 +68,7 @@ const AboutBlurb = () => {
                     <BrushIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Designer </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 
-                        Helping others, contributing expertise, and achieving greatness through teamwork.
+                    Skilled in crafting engaging websites for positive user experiences.                    
                     </Typography> 
                 </Box> 
 

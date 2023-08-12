@@ -24,7 +24,7 @@ const Projects = () => {
         <>
           <Header 
             title="My Projects" 
-            subtitle="Check out some of my favorite projects! Each one played a part in making me a better developer."   
+            subtitle="Check out some of my favorite projects!"   
             link=""
             cta=""
             img={keyboard}

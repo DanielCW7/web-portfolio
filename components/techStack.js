@@ -111,7 +111,7 @@ useEffect(() => {
                     <Typography variant="body1"> 
                         Since 2019, I've been on a dedicated web development journey, 
                         progressing from HTML and CSS to exploring tools like Tailwind CSS, 
-                        Next.js, and React. Embracing both familiar and lesser-known technologies with a humble approach, 
+                        Nextjs, and Reactjs. Embracing both familiar and lesser-known technologies with a humble approach, 
                         I've crafted responsive interfaces and user experiences while deepening my understanding of JavaScript. 
                         My journey continues as I strive for excellence and innovation in the ever-evolving world of web development.
                     </Typography>
