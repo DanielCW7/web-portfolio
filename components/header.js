@@ -5,7 +5,7 @@ import Link from "next/link";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import anime from "animejs";
-import { useState, useRef, useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 
 const Header = (props) => {

@@ -30,10 +30,14 @@ const AboutBlurb = () => {
 
             anime({
                 targets: ".sections",
-                translateY: 20,
+                translateY: {
+                    value: 20,
+                    duration: 250
+                },
                 opacity: 1,
                 delay: anime.stagger(150),
                 easing: "easeOutExpo"
+                
             })
 
         }

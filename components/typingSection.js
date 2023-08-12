@@ -33,7 +33,7 @@ const deleting = async (target, currentWord) => {
     });
 }
 
-// goes from typing to deleting and then
+// goes from typing to deleting, and loops
 const typingLoop = async (target) => {
     for (const word of adjectives) {
         await typewriter(target, word);
