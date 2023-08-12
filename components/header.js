@@ -69,7 +69,7 @@ const Header = (props) => {
                 minHeight: "70vh",
             }} className="w-full relative bg-cover bg-sticky bg-no-repeat flex flex-col justify-center">
                 
-                <Image src={props.img} fill={true} className="object-cover header_Img" />
+                <Image src={props.img} fill={true} className="object-cover header_Img" priority={true} />
                 <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70 pointer-events-none"></div>
 
                 <Container sx={{ p:5 }}>
