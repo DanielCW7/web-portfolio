@@ -65,7 +65,6 @@ useEffect(() => {
 
     function display(list) {
         const techStack = list.map(element => {
-                                console.log(element.img.src)
                                 return <Image height="60" width="60" src={element.img.src} className="m-auto tech scale-0 opacity-0" alt={element.img.alt} />
                             });
         return techStack

@@ -20,7 +20,6 @@ const AboutBlurb = () => {
             // used threshold instead of "rootMargin"
         );
         
-        console.log(isIntersecting, ref.current)
         observer.observe(ref.current);
         return () => observer.disconnect()
     }, [])

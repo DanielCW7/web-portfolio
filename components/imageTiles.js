@@ -12,7 +12,6 @@ const list = [
 ]
 
 function populate(images) {
-    console.log(images)
     const total = images.map(e => {
         return  <ImageListItem key={e.img} cols={1}>
                         <Image 
