@@ -1,6 +1,6 @@
-import Button from "@mui/material/Button"
+// import from "@mui/material/Button"
 import * as React from "react";
-import { Container, Box, Typography } from '@mui/material';
+import { Container, Box, Typography, Button } from '@mui/material';
 import Link from "next/link";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

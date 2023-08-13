@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Card, Button } from "@mui/material"
+import { Box, Container, Typography } from "@mui/material"
 import GroupIcon from '@mui/icons-material/Group';
 import BrushIcon from '@mui/icons-material/Brush';
 import DataObjectIcon from '@mui/icons-material/DataObject';
@@ -58,7 +58,7 @@ const AboutBlurb = () => {
                 <Box className="flex-1 flex flex-col justify-center text-center text-white sections opacity-0"> 
                     <DataObjectIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Developer </Typography>
-                    <Typography variant="body1" className=" text-center" gutterBottom> 
+                    <Typography variant="body1" className="text-center" gutterBottom> 
                         Building robust infrastructures, weaving technology to power the web's dynamic potential.
                     </Typography> 
                 </Box>                    
