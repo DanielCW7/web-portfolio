@@ -1,7 +1,6 @@
-import { Box, Container, Typography, Item, Grid, Button } from "@mui/material"
+import { Box, Container, Typography, Button } from "@mui/material"
 import dt from "../images/dt_6.JPG"
 import Image from "next/image";
-import Link from "next/link";
 
 const Outro = () => {
     return (
