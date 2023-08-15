@@ -47,14 +47,14 @@ const AboutBlurb = () => {
 
     return (
         <Box className="flex flex-col justify-center bg-cover bg-fixed shadow">
-            <Container className="gap-10 flex flex-col md:flex-row justify-center" ref={ref} sx={{
+            <Container ref={ref} sx={{
                 minHeight: {
                     xs: "40vh",
                     sm: "40vh",
                     md: "45vh",  
                 },
                 p: 5
-            }}>
+            }} className="gap-10 flex flex-col md:flex-row justify-center">
                 <Box className="flex-1 flex flex-col justify-center text-center text-white sections opacity-0"> 
                     <DataObjectIcon className="text-6xl mx-auto" gutterBottom />
                     <Typography variant="h5" component="h3" gutterBottom> Developer </Typography>

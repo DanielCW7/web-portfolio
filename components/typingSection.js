@@ -51,14 +51,14 @@ useEffect(() => {
 
   return (
     <Box className="bg-cover bg-fixed my-10 md:my-20">
-      <Container className="gap-10 flex flex-col md:flex-row justify-center" sx={{
+      <Container sx={{
         minHeight: {
           xs: "40vh",
           sm: "40vh",
           md: "45vh",  
         },
         p: 5
-      }}>
+      }} className="gap-10 flex flex-col md:flex-row justify-center">
         <div className="flex-1 flex flex-col justify-center text-center">
           <span className="font-black text-5xl md:text-6xl lg:text-7xl" variant="h1" component="h2" gutterBottom >
             I am <span className="typewriter transition-all"></span>
