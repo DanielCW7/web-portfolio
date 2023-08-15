@@ -59,7 +59,7 @@ useEffect(() => {
         },
         p: 5
       }}>
-        <Box className="flex-1 flex flex-col justify-center text-center">
+        <div className="flex-1 flex flex-col justify-center text-center">
           <Typography className="font-black" variant="h1" component="h2" gutterBottom sx={{
             fontSize: {
                 xs: "3rem",
@@ -69,7 +69,7 @@ useEffect(() => {
           }}>
             I am <span className="typewriter transition-all"></span>
           </Typography>
-        </Box>                    
+        </div>                    
       </Container>             
     </Box>
   );
