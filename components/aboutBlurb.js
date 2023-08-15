@@ -56,7 +56,7 @@ const AboutBlurb = () => {
                 p: 5
             }} className="gap-10 flex flex-col md:flex-row justify-center">
                 <Box className="flex-1 flex flex-col justify-center text-center text-white sections opacity-0"> 
-                    <DataObjectIcon className="text-6xl mx-auto" gutterBottom />
+                    <DataObjectIcon className="text-6xl mx-auto" />
                     <Typography variant="h5" component="h3" gutterBottom> Developer </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 
                         Building robust infrastructures, weaving technology to power the web's dynamic potential.
