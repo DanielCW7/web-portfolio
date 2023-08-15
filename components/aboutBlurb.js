@@ -64,7 +64,7 @@ const AboutBlurb = () => {
                 </Box>                    
 
                 <Box className="flex-1 flex flex-col justify-center text-center text-white sections opacity-0"> 
-                    <BrushIcon className="text-6xl mx-auto" gutterBottom />
+                    <BrushIcon className="text-6xl mx-auto" />
                     <Typography variant="h5" component="h3" gutterBottom> Designer </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 
                     Skilled in crafting engaging websites for positive user experiences.                    
@@ -72,7 +72,7 @@ const AboutBlurb = () => {
                 </Box> 
 
                 <Box className="flex-1 flex flex-col justify-center text-center text-white sections opacity-0"> 
-                    <GroupIcon className="text-6xl mx-auto" gutterBottom />
+                    <GroupIcon className="text-6xl mx-auto" />
                     <Typography variant="h5" component="h3" gutterBottom> Team Player </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 
                         Helping others, contributing expertise, and achieving greatness through teamwork.
