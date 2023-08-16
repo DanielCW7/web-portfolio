@@ -28,7 +28,7 @@ const AboutBlurb = () => {
         if(isIntersecting) {
 
             anime({
-                targets: ".sections",
+                targets: ".blurbs",
                 translateY: {
                     value: 20,
                     duration: 250
@@ -46,24 +46,38 @@ const AboutBlurb = () => {
 
 
     return (
-        <Box className="flex flex-col justify-center bg-cover bg-fixed shadow">
+        <Box className="shadow" sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            backgroundPosition: "fixed",
+            backgroundSize: "cover"
+        }}>
             <Container ref={ref} sx={{
                 minHeight: {
                     xs: "40vh",
                     sm: "40vh",
                     md: "45vh",  
                 },
-                p: 5
-            }} className="gap-10 flex flex-col md:flex-row justify-center">
-                <Box className="flex-1 flex flex-col justify-center text-center text-white sections opacity-0"> 
+                p: 5,
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: {
+                    xs: "column",
+                    lg: "row"
+                },
+                columnGap: 10,
+                rowGap: 5
+            }}>
+                <Box className="blurbs"> 
                     <DataObjectIcon className="text-6xl mx-auto" />
                     <Typography variant="h5" component="h3" gutterBottom> Developer </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 
-                        Building robust infrastructures, weaving technology to power the web's dynamic potential.
+                        Utilizing knowledge learned to power the web's dynamic potential.
                     </Typography> 
                 </Box>                    
 
-                <Box className="flex-1 flex flex-col justify-center text-center text-white sections opacity-0"> 
+                <Box className="blurbs"> 
                     <BrushIcon className="text-6xl mx-auto" />
                     <Typography variant="h5" component="h3" gutterBottom> Designer </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 
@@ -71,7 +85,7 @@ const AboutBlurb = () => {
                     </Typography> 
                 </Box> 
 
-                <Box className="flex-1 flex flex-col justify-center text-center text-white sections opacity-0"> 
+                <Box className="blurbs"> 
                     <GroupIcon className="text-6xl mx-auto" />
                     <Typography variant="h5" component="h3" gutterBottom> Team Player </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 

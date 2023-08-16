@@ -62,7 +62,19 @@
   min-height: 70vh;
 }
 
+.blurbs {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  justify-Content: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+}
 
+.blurbIcons {
+  
+}
 /* CSS for creating a dark overlay on an <Image /> in Next.js */
 
 
