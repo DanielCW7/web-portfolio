@@ -5,14 +5,29 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
     return (
-        <Box className='charcoal py-5 mt-20'>
-            <Container className="flex flex-row">
-                <Box className="flex-1 flex">
-                    <a href="mailto:dev.danielcw@gmail.com"><Typography variant="body2" className="text-white"> Dev.danielcw@gmail.com </Typography></a>
+        <Box sx={{
+            padding: "0rem 1.25rem",
+            marginTop: "5rem",
+            padding: 2
+        }} className='charcoal'>
+            <Container sx={{
+                display: "flex",
+                flexDirection: "row"
+            }}>
+                <Box sx={{
+                    display: "flex",
+                    flex: "1 1 0%"
+                }}>
+                    <a href="mailto:dev.danielcw@gmail.com"><Typography sx={{ color: "white" }} variant="body2"> Dev.danielcw@gmail.com </Typography></a>
                 </Box>
-                <Box className="flex-1 flex gap-2 justify-end">
-                    <Link href="https://github.com/DanielCW7"><GitHubIcon className="text-white" /></Link>
-                    <Link href="https://www.linkedin.com/in/daniel-connor-wilson-a67706177"><LinkedInIcon className="text-white" /></Link>
+                <Box sx={{ 
+                    display: "flex",
+                    flex: "1 1 0%",
+                    gap: 1,
+                    justifyContent: "flex-end"
+                }}>
+                    <Link href="https://github.com/DanielCW7"><GitHubIcon sx={{ color: "#fff"}} /></Link>
+                    <Link href="https://www.linkedin.com/in/daniel-connor-wilson-a67706177"><LinkedInIcon sx={{ color: "#fff"}} /></Link>
                 </Box>
             </Container>
         </Box>

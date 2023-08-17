@@ -1,14 +1,12 @@
 import * as React from 'react';
 import { 
     IconButton, 
-    MenuItem, 
     Toolbar, 
     AppBar, 
     Typography, 
     Container, 
     Stack, 
     Button, 
-    Menu, 
     Drawer,
     Box,
     Divider
@@ -23,12 +21,14 @@ const Nav = () => {
 
     
     return (
-        <AppBar position="sticky" className='charcoal'>
+        <AppBar position="sticky" color="transparent" className="charcoal" >
 
                 {/* hide on tablet+ */}
-                <Container sx={{ display: {xs: "", md: "none"} }}>                        
+                <Container sx={{ 
+                    display: {xs: "", md: "none"} 
+                }}>                        
                     <Box>
-                        <IconButton size="large" edge="start" color="inherit" aria-label="nav" onClick={() => {setNavOpen(true)}}>
+                        <IconButton sx={{ color: "#fff"}} size="large" edge="start" aria-label="nav" onClick={() => {setNavOpen(true)}}>
                             <MenuIcon />
                         </IconButton> 
 
@@ -44,16 +44,19 @@ const Nav = () => {
 
 
                 {/* hide on mobile */}
-                <Container sx={{ display: {xs: "none", md: "flex"} }}>                        
-                <Typography variant="h7" component="div" sx={{flexGrow: 1}}></Typography>
+                <Container sx={{ 
+                    display: {xs: "none", md: "flex"} 
+                }}>                        
+                <Typography sx={{ flexGrow: 1 }} variant="h7" component="div"></Typography>
 
                     <Toolbar>
-                        <Stack direction="row" spacing={2} id="nav-menu">
+                        <Stack sx={{ color: "#fff"}} direction="row" spacing={2} id="nav-menu">
                             <Link href="/"><Button color="inherit"> Home </Button></Link>
                             <Link href="/projects"><Button color="inherit"> Projects </Button></Link>
                             <Link href="/about"><Button color="inherit"> About </Button></Link>
                         </Stack>
-                    </Toolbar>                    
+                    </Toolbar> 
+
                 </Container>
 
         </AppBar>            

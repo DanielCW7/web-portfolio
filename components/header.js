@@ -67,10 +67,18 @@ const Header = (props) => {
             <Box sx={{
                 // backgroundImage: `linear-gradient(rgb(12, 12, 12, .7), rgb(12, 12, 12, .7)), url(${props.img.src})`,
                 minHeight: "70vh",
-            }} className="w-full relative bg-cover bg-sticky bg-no-repeat flex flex-col justify-center">
+                width: "100%",
+                position: "relative",
+                backgroundSize: "cover",
+                backgroundPosition: "sticky",
+                backgroundRepeat: "no-repeat",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center"
+            }}>
                 
-                <Image src={props.img} fill={true} className="object-cover header_Img" priority={true} />
-                <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black opacity-70 pointer-events-none"></div>
+                <Image src={props.img} fill={true} className="header_Img" priority={true} />
+                <Box className="gradient"></Box>
 
                 <Container sx={{ p:5 }}>
                     <Typography sx={{
@@ -80,19 +88,45 @@ const Header = (props) => {
                             md: "5rem"
                         },
                         color: "#fff",
-                        fontWeight: "bold"
-                    }} variant="h1" id="title" className="opacity-0"> {props?.title ?? ""} </Typography>
+                        fontWeight: "bold",
+                        opacity: 0
+                    }} variant="h1" id="title"> {props?.title ?? ""} </Typography>
 
-                    <Typography variant="overline" component="h2" className="text-white opacity-0" gutterBottom > 
+                    <Typography sx={{ 
+                        color: "#fff",
+                        opacity: 0
+                    }} variant="overline" component="h2" gutterBottom > 
                         {props.link === "/" ? "Front-end Engineer" : "" }
                     </Typography> 
-                    <Typography sx={{color: "#fff"}} id="subtitle" className="relative opacity-0" gutterBottom> {props?.subtitle ?? ""} </Typography> 
-                    <Box className="flex gap-2 justify-start">
-                        <Link href="https://github.com/DanielCW7"><GitHubIcon id="link1" className="text-white relative opacity-0" /></Link>
-                        <Link href="https://www.linkedin.com/in/daniel-connor-wilson-a67706177"><LinkedInIcon id="link2" className="text-white relative opacity-0" /></Link>
+                    <Typography sx={{ 
+                        color: "#fff",
+                        position: "relative",
+                        opacity: 0
+                    }} id="subtitle" gutterBottom> {props?.subtitle ?? ""} </Typography> 
+                    <Box sx={{
+                        display: "flex",
+                        gap: 1
+                    }}>
+                        <Link href="https://github.com/DanielCW7">
+                            <GitHubIcon sx={{
+                                color: "#fff",
+                                position: "relative",
+                                opacity: 0
+                            }} id="link1" />
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/daniel-connor-wilson-a67706177">
+                            <LinkedInIcon sx={{
+                                color: "#fff",
+                                position: "relative",
+                                opacity: 0
+                            }} id="link2" />
+                        </Link>
                     </Box>
                     { props.cta 
-                    ? <Link href={props.link}><Button id="cta" variant="contain" sx={{ mt: 5 }} className="glow-btn mt-5 opacity-0"> {props.cta} </Button></Link>
+                    ? <Link href={props.link}><Button sx={{ 
+                        mt: 5,
+                        opacity: 0
+                    }} id="cta" variant="contain" className="glow-btn"> {props.cta} </Button></Link>
                     : null }
                 </Container>
 

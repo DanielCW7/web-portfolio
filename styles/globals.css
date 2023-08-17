@@ -58,8 +58,17 @@
   text-shadow: 1px 1px 2px #000;
 }
 
+.gradient {
+  position: absolute;
+  background: linear-gradient(to bottom, black, black);
+  opacity: .7;
+  pointer-events: none;
+  inset: 0;
+}
+
 .header_Img {
   min-height: 70vh;
+  object-fit: cover;
 }
 
 .blurbs {

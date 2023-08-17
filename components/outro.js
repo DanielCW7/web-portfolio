@@ -5,13 +5,21 @@ import Image from "next/image";
 const Outro = () => {
     return (
 
-            <Container className="gap-10 flex flex-col md:flex-row justify-center" sx={{
+            <Container sx={{
                 minHeight: {
                     xs: "40vh",
                     sm: "40vh",
                     md: "45vh",  
                 },
-                p: 5
+                p: 5,
+                gap: "2.5rem",
+                display: "flex",
+                flexDirection: {
+                    xs: "column",
+                    md: "row"
+                },
+                justifyContent: "center"
+
             }}>
 
                 <Box className="md:hidden h-full flex-1 flex flex-col justify-center max-h-64 md:max-h-none rounded-2xl overflow-hidden m-auto"> 

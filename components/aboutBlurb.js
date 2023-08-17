@@ -72,23 +72,23 @@ const AboutBlurb = () => {
                 <Box className="blurbs"> 
                     <DataObjectIcon className="blurbIcons" />
                     <Typography variant="h5" component="h3" gutterBottom> Developer </Typography>
-                    <Typography variant="body1" className="text-center" gutterBottom> 
+                    <Typography sx={{ textAlign: "center" }} variant="body1" gutterBottom> 
                         Utilizing knowledge learned to power the web's dynamic potential.
                     </Typography> 
                 </Box>                    
 
                 <Box className="blurbs"> 
-                    <BrushIcon className="text-6xl mx-auto" />
+                    <BrushIcon className="blurbIcons" />
                     <Typography variant="h5" component="h3" gutterBottom> Designer </Typography>
-                    <Typography variant="body1" className="text-center" gutterBottom> 
+                    <Typography sx={{ textAlign: "center" }} variant="body1" gutterBottom> 
                     Skilled in crafting engaging websites for positive user experiences.                    
                     </Typography> 
                 </Box> 
 
                 <Box className="blurbs"> 
-                    <GroupIcon className="text-6xl mx-auto" />
+                    <GroupIcon className="blurbIcons" />
                     <Typography variant="h5" component="h3" gutterBottom> Team Player </Typography>
-                    <Typography variant="body1" className="text-center" gutterBottom> 
+                    <Typography sx={{ textAlign: "center" }} variant="body1" gutterBottom> 
                         Helping others, contributing expertise, and achieving greatness through teamwork.
                     </Typography> 
                 </Box> 

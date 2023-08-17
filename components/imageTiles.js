@@ -23,7 +23,11 @@ function populate(images) {
                             loading="lazy"
                             col={1} 
                             row={1} 
-                            className="rounded-xl overflow-hidden"/>
+                            className=""
+                            sx={{
+                                borderRadius: ".75rem",
+                                overflow: "hidden"
+                            }} />
                 </ImageListItem>
     })
     return total
@@ -31,8 +35,8 @@ function populate(images) {
 
 const ImageTiles = () => {
     return (
-        <Container className="mb-10">
-            <ImageList cols={3} sx={{ }}>
+        <Container sx={{ marginBottom: "2.5rem"}}>
+            <ImageList cols={3}>
                 {populate(list)}
             </ImageList>
         </Container>
