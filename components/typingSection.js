@@ -76,7 +76,8 @@ useEffect(() => {
           flex: "flex: 1 1 0%;",
           flexDirection: "column",
           justifyContent: "center",
-          textAlign: "center"
+          textAlign: "center",
+          
         }}>
           <Typography sx={{
               fontWeight: 900,
@@ -86,7 +87,7 @@ useEffect(() => {
                 xl: "4.5rem"
               }
             }} variant="h1" component="h2" gutterBottom >
-            I am <Typography className="typewriter" variant="h1" component="h2"></Typography>
+            I am <span className="typewriter" variant="h1" component="h2"></span>
           </Typography>
         </Box>                    
       </Container>             
