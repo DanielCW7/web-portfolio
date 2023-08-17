@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from "react";
+import { useState, useEffect } from "react";
 import { Box, Container, Typography } from "@mui/material";
 
 const typingSection = () => {
@@ -50,20 +50,45 @@ useEffect(() => {
 
 
   return (
-    <Box className="bg-cover bg-fixed my-10 md:my-20">
+    <Box sx={{
+      backgroundPosition: "fixed",
+      backgroundSize: "cover",
+      marginTop: "2.5rem",
+      marginBottom: "2.5rem",
+    }}>
       <Container sx={{
         minHeight: {
           xs: "40vh",
           sm: "40vh",
           md: "45vh",  
         },
-        p: 5
-      }} className="gap-10 flex flex-col md:flex-row justify-center">
-        <div className="flex-1 flex flex-col justify-center text-center">
-          <span className="font-black text-5xl md:text-6xl lg:text-7xl" variant="h1" component="h2" gutterBottom >
-            I am <span className="typewriter transition-all"></span>
-          </span>
-        </div>                    
+        p: 5,
+        columnGap: 10,
+        display: "flex",
+        flexDirection: {
+          xs: "column",
+          lg: "row"        
+        },
+        justifyContent: "center"
+      }}>
+        <Box sx={{
+          display: "flex",
+          flex: "flex: 1 1 0%;",
+          flexDirection: "column",
+          justifyContent: "center",
+          textAlign: "center"
+        }}>
+          <Typography sx={{
+              fontWeight: 900,
+              fontSize: {
+                xs: "3rem",
+                lg: "3.75rem",
+                xl: "4.5rem"
+              }
+            }} variant="h1" component="h2" gutterBottom >
+            I am <Typography className="typewriter" variant="h1" component="h2"></Typography>
+          </Typography>
+        </Box>                    
       </Container>             
     </Box>
   );
