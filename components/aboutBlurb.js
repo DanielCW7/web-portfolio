@@ -70,7 +70,7 @@ const AboutBlurb = () => {
                 rowGap: 5
             }}>
                 <Box className="blurbs"> 
-                    <DataObjectIcon className="text-6xl mx-auto" />
+                    <DataObjectIcon className="blurbIcons" />
                     <Typography variant="h5" component="h3" gutterBottom> Developer </Typography>
                     <Typography variant="body1" className="text-center" gutterBottom> 
                         Utilizing knowledge learned to power the web's dynamic potential.
