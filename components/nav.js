@@ -21,7 +21,7 @@ const Nav = () => {
 
     
     return (
-        <AppBar position="sticky" color="transparent" className="charcoal" >
+        <AppBar position="sticky" color="inherit" className="charcoal" >
 
                 {/* hide on tablet+ */}
                 <Container sx={{ 
