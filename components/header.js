@@ -63,7 +63,7 @@ const Header = (props) => {
     }, [])
     
     return (
-        <header className="min-h-70 overflow-hidden">
+        <header>
             <Box sx={{
                 // backgroundImage: `linear-gradient(rgb(12, 12, 12, .7), rgb(12, 12, 12, .7)), url(${props.img.src})`,
                 minHeight: "70vh",
@@ -126,7 +126,7 @@ const Header = (props) => {
                     ? <Link href={props.link}><Button sx={{ 
                         mt: 5,
                         opacity: 0
-                    }} id="cta" variant="contain" className="glow-btn"> {props.cta} </Button></Link>
+                    }} id="cta" variant="contain" color="primary" className="glow-btn"> {props.cta} </Button></Link>
                     : null }
                 </Container>
 
