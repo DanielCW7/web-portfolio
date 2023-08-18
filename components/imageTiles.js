@@ -13,7 +13,10 @@ const list = [
 
 function populate(images) {
     const total = images.map(e => {
-        return  <ImageListItem key={e.img} cols={1}>
+        return  <ImageListItem key={e.img} sx={{
+                                borderRadius: ".75rem",
+                                overflow: "hidden"
+                            }}>
                         <Image 
                             src={e.img} 
                             height={400} 
@@ -23,10 +26,7 @@ function populate(images) {
                             loading="lazy"
                             col={1} 
                             row={1} 
-                            sx={{
-                                borderRadius: ".75rem",
-                                overflow: "hidden"
-                            }} />
+                            />
                 </ImageListItem>
     })
     return total
@@ -34,7 +34,10 @@ function populate(images) {
 
 const ImageTiles = () => {
     return (
-        <Container sx={{ marginBottom: "2.5rem"}}>
+        <Container sx={{ 
+            marginBottom: "2.5rem",
+
+        }}>
             <ImageList cols={3}>
                 {populate(list)}
             </ImageList>
