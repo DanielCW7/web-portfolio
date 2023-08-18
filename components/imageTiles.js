@@ -14,7 +14,6 @@ const list = [
 function populate(images) {
     const total = images.map(e => {
         return  <ImageListItem key={e.img} sx={{
-                                borderRadius: ".75rem",
                                 overflow: "hidden"
                             }}>
                         <Image 
@@ -25,7 +24,8 @@ function populate(images) {
                             alt={e.alt}
                             loading="lazy"
                             col={1} 
-                            row={1} 
+                            row={1}
+                            style={{borderRadius: ".75rem", margin: "auto"}}
                             />
                 </ImageListItem>
     })
@@ -38,7 +38,13 @@ const ImageTiles = () => {
             marginBottom: "2.5rem",
 
         }}>
-            <ImageList cols={3}>
+            <ImageList sx={{
+                display: "grid",
+                gridTemplateColumns: {
+                    xs: "repeat(1, minmax(0, 1fr)) !important",
+                    md: "repeat(3, minmax(0, 1fr)) !important"
+                }
+            }}>
                 {populate(list)}
             </ImageList>
         </Container>

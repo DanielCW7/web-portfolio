@@ -20,7 +20,7 @@
 }
 .glow-btn:hover { background-color: var(--custom-dark-blue) !important; }
 
-.charcoal { background-color: var(--charcoal); }
+.charcoal { background-color: var(--charcoal) !important; }
 
 /* controls the typing sections blinking animation */
 @keyframes blinking {
