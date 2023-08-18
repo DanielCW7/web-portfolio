@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Container, Box } from '@mui/material';
+import { Box } from '@mui/material';
 import Header from "@/components/header";
 import dt from "../images/dt_3.webp"
 import AboutBlurb from "@/components/aboutBlurb";
@@ -21,21 +21,41 @@ const HomePage = () => {
                 img={dt}
             />
 
-            <Box className="flex flex-col radial">
-                <Box className="bg-white">
+            <Box className="radial">
+                <Box sx={{
+                    backgroundColor: "#fff"
+                }}>
                     <TechStack />
                 </Box>
-                <Box className="bg-white">
-                    <div className="polygon2 radial h-16 md:h-32"></div>
+                <Box sx={{
+                    backgroundColor: "#fff"
+                }}>
+                    <Box sx={{
+                        height: {
+                            xs: "4rem",
+                            lg: "8rem"
+                        }
+                    }} className="polygon2 radial"></Box>
                 </Box> 
                 <AboutBlurb />                  
-                <Box className="bg-white">
-                    <div className="polygon radial h-16 md:h-32"></div> 
+                <Box sx={{
+                    backgroundColor: "#fff"
+                }}>
+                    <Box sx={{
+                        height: {
+                            xs: "4rem",
+                            lg: "8rem"
+                        }
+                    }} className="polygon radial"></Box> 
                 </Box>  
-                <Box className="bg-white">
+                <Box sx={{
+                    backgroundColor: "#fff"
+                }}>
                     <TypingSection />                  
                 </Box>
-                <Box className="bg-white">                         
+                <Box sx={{
+                    backgroundColor: "#fff"
+                }}>                       
                     <Outro /> 
                 </Box>
             </Box>

@@ -64,9 +64,10 @@ useEffect(() => {
     
 
     function display(list) {
-        const techStack = list.map(element => {
-                                return <Image height="60" width="60" src={element.img.src} className="m-auto tech scale-0 opacity-0" alt={element.img.alt} />
-                            });
+        const techStack = 
+        list.map(element => {
+            return <Image height="60" width="60" src={element.img.src} className="tech" alt={element.img.alt} />
+        });
         return techStack
         
     }
@@ -84,28 +85,60 @@ useEffect(() => {
 
     return (
         <Box>
-            <Container className="flex flex-col gap-10 md:flex-row justify-center" sx={{
+            <Container sx={{
+                display: "flex",
+                flexDirection: {
+                    xs: "column",
+                    md: "row"
+                },
+                gap: "2.5rem",
                 minHeight: {
                     xs: "40vh",
                     sm: "40vh",
                     md: "45vh",  
                 },
-                p: 5
+                p: 5,
+                justifyContent: "center"
             }}>
-                <Box className="flex flex-row flex-1 justify-center h-min m-auto">
-                    <Box className="grid grid-cols-4 gap-x-7 gap-y-7 md:gap-x-10 md:gap-y-10" ref={ref}>
+                <Box sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    flex: "1 1 0%",
+                    justifyContent: "center",
+                    margin: "auto"
+                }}>
+                    <Box sx={{
+                        display: "grid",
+                        gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+                        columnGap: {
+                            xs: "1.75rem",
+                            lg: "2.5rem"
+                        },
+                        rowGap: {
+                            xs: "1.75rem",
+                            lg: "2.5rem"
+                        }
+
+                    }} ref={ref}>
                         {/* displays images from the array */}
                         {tech ? display(tech) : "err"}   
                     </Box>
                 </Box>
 
-                <Box className="flex flex-col flex-1 justify-center opacity-0" id="techCopy">
-                    <Typography gutterBottom className="font-black" variant="h2" sx={{
+                <Box sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    flex: "1 1 0%",
+                    justifyContent: "center",
+                    opacity: 0
+                }} id="techCopy">
+                    <Typography gutterBottom variant="h2" sx={{
                         fontSize: {
                             xs: "2rem",
                             md: "3rem",
                             lg: "4rem"
-                        }
+                        },
+                        fontWeight: 900
                     }}> My Experience </Typography>
                     <Typography variant="body1"> 
                         Since 2019, I've been on a dedicated web development journey, 

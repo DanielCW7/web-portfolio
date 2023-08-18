@@ -124,9 +124,8 @@ const Header = (props) => {
                     </Box>
                     { props.cta 
                     ? <Link href={props.link}><Button sx={{ 
-                        mt: 5,
-                        opacity: 0
-                    }} id="cta" variant="contain" color="primary" className="glow-btn"> {props.cta} </Button></Link>
+                        mt: 5
+                    }} id="cta" variant="contain" className="glow-btn"> {props.cta} </Button></Link>
                     : null }
                 </Container>
 

@@ -25,14 +25,33 @@ const Outro = () => {
                 <Box sx={{
                     height: "100%",
                     display: {
-                        lg: "hidden"
-                    }
-                }} className="md:hidden h-full flex-1 flex flex-col justify-center max-h-64 md:max-h-none rounded-2xl overflow-hidden m-auto"> 
-                    <Image height="full" width="full" src={dt} className="rounded-2xl bg-cover"/> 
+                        xs: "flex",
+                        md: "none"
+                    },
+                    height: "100%",
+                    flexDirection: "column",
+                    flex: "1 1 0%",
+                    justifyContent: "center",
+                    maxHeight: {
+                        xs: "16rem",
+                        lg: ""
+                    },
+                    borderRadius: "1rem",
+                    overflow: "hidden",
+                    margin: "auto"
+                }}> 
+                    <Image sx={{
+                        borderRadius: "1rem",
+                        backgroundSize: "cover"
+                    }} height="full" width="full" src={dt} /> 
                 </Box>  
-                <Box className="flex-1 my-auto"> 
+                <Box sx={{
+                    flex: "1 1 0%",
+                    marginTop: "auto",
+                    marginBottom: "auto"
+                }}> 
                     <Typography variant="h5" component="h3" gutterBottom> Let's Connect </Typography>
-                    <Typography variant="body1" className="" gutterBottom> 
+                    <Typography variant="body1" gutterBottom> 
                         I would love the chance to prove myself as a valuable asset. 
                         If you think that I would make a good addition to your team, then let's talk! 
                     </Typography> 
@@ -40,12 +59,33 @@ const Outro = () => {
                         I'm always learning and working on my next project, but experience is the best teacher by far.
                         If you like my projects, please don't hesitate to reach out!
                     </Typography>  */}
-                    <Button href="mailto:dev.danielcw@gmail.com" variant="outlined" className="mt-5"> contact </Button>                        
+                    <Button sx={{
+                        marginTop: "1.25rem"
+                    }} href="mailto:dev.danielcw@gmail.com" variant="outlined"> contact </Button>                        
 
 
                 </Box>                 
-                <Box className="hidden md:flex h-full flex-1 flex-col justify-center max-h-64 md:max-h-none rounded-2xl overflow-hidden m-auto"> 
-                    <Image height="full" width="full" src={dt} className="rounded-2xl bg-cover"/> 
+                <Box sx={{
+                    height: "100%",
+                    display: {
+                        xs: "none",
+                        md: "flex"
+                    },
+                    flexDirection: "column",
+                    flex: "1 1 0%",
+                    justifyContent: "center",
+                    maxHeight: {
+                        xs: "16rem",
+                        lg: ""
+                    },
+                    borderRadius: "1rem",
+                    overflow: "hidden",
+                    margin: "auto"
+                }}> 
+                    <Image sx={{
+                        borderRadius: "1rem",
+                        backgroundSize: "cover"
+                    }} height="full" width="full" src={dt} /> 
                 </Box>   
 
             </Container>            

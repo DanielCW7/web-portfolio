@@ -14,8 +14,11 @@
   --test-color-2: rgb(251, 4, 29);
 }
 
-.glow-btn { background-color: var(--custom-blue); }
-.glow-btn:hover { background-color: var(--custom-dark-blue); }
+.glow-btn { 
+  background-color: var(--custom-blue) !important; 
+  opacity: 0;
+}
+.glow-btn:hover { background-color: var(--custom-dark-blue) !important; }
 
 .charcoal { background-color: var(--charcoal); }
 
@@ -52,6 +55,8 @@
   padding: 0;
   background: linear-gradient(rgba(0,86,187,1) 0%, #00ccff 100%);
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
 }
 
 .shadow {
@@ -85,6 +90,11 @@
   font-size: 3rem !important;
   margin-left: auto;
   margin-right: auto;
+}
+
+.tech {
+  margin: auto;
+  opacity: 0;
 }
 /* CSS for creating a dark overlay on an <Image /> in Next.js */
 

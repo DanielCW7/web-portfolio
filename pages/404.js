@@ -1,12 +1,27 @@
-
+import { Box, Typography } from "@mui/material"
 
 
 const custom404 = () => {
     return (
-        <div className="h-screen flex flex-col justify-center">
-            <h1 className="text-center font-black text-gray-400 text-6xl"> 404 </h1>
-            <h2 className="text-center font-black text-gray-400 text-2xl"> Page not found </h2>
-        </div>
+        <Box sx={{
+            height: "90vh",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center"
+        }}>
+            <Typography sx={{
+                textAlign: "center",
+                fontWeight: 900,
+                color: "rgba(156, 163, 175)",
+                fontSize: "3.75rem"
+            }}> 404 </Typography>
+            <Typography sx={{
+                textAlign: "center",
+                fontWeight: 900,
+                color: "rgba(156, 163, 175)",
+                fontSize: "1.5rem"
+            }}> Page not found </Typography>
+        </Box>
     )
 }
 

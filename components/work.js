@@ -20,20 +20,32 @@ const Work = (props) => {
     }
 
   return (
-        <Card sx={{ width: 345 }} className="flex flex-col justify-between" key={props.project} >
+        <Card sx={{ 
+            width: 345,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between"
+        }} key={props.project} >
             <CardMedia sx={{ height: 140 }} image={`${props.thumbnail}`} title={props.project} />
 
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div"> {props.project} </Typography>
                 <Typography gutterBottom variant="body2" color="text.secondary"> {props.description} </Typography>
-                <Box className="flex flex-row gap-2 flex-wrap">
+                <Box sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    gap: "0.5rem",
+                    flexWrap: "wrap"
+                }} >
                     {props?.badges ? badges(props.badges) : ""}
                 </Box>
 
             </CardContent>
 
 
-            <CardActions className="mt-auto">
+            <CardActions sx={{
+                marginTop: "auto"
+            }}>
                 <Link href={props?.sourceCode ?? "https://github.com/DanielCW7"}><Button size="small"> Source Code </Button></Link>
                 <Button href={props?.demo ?? "https://github.com/DanielCW7"} size="small"> Demo </Button>
             </CardActions>
