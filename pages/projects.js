@@ -3,7 +3,7 @@ import keyboard from "../images/kb_1.webp"
 import Work from "@/components/work"
 import { Container } from "@mui/material"
 import ProjectDetails from "@/components/projectDetails"
-import profile from "../images/profile.jpg"
+import placeholder from "../images/placeholder.jpg"
 
 function populate(projects) {
   const items = projects.map((item) => {
@@ -12,7 +12,7 @@ function populate(projects) {
       description={item?.description ?? "Coming soon!"}
       sourceCode={item?.sourceCode ?? "https://github.com/DanielCW7"} 
       demo={item?.demo ?? "https://github.com/DanielCW7"} 
-      thumbnail={item?.thumbnail ?? profile.src} 
+      thumbnail={item?.thumbnail ?? placeholder.src} 
       badges={item?.badges ?? ""} 
       key={item?.project ?? ""} />
   })

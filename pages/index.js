@@ -15,7 +15,7 @@ const HomePage = () => {
         <>
             <Header 
                 title="Daniel C. Wilson" 
-                subtitle="I'm a Front-end ReactJs Engineer with a desire to change the world!"
+                subtitle="I'm a Front-end ReactJs Engineer with a passion for coding!"
                 link="/projects"
                 cta="My Work"
                 img={dt}

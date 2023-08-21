@@ -65,7 +65,6 @@ const Header = (props) => {
     return (
         <header>
             <Box sx={{
-                // backgroundImage: `linear-gradient(rgb(12, 12, 12, .7), rgb(12, 12, 12, .7)), url(${props.img.src})`,
                 minHeight: "70vh",
                 width: "100%",
                 position: "relative",

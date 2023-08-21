@@ -82,7 +82,7 @@ useEffect(() => {
           <Typography sx={{
               fontWeight: 900,
               fontSize: {
-                xs: "3rem",
+                xs: "2.5rem",
                 lg: "3.75rem",
                 xl: "4.5rem"
               }

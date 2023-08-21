@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Button } from "@mui/material"
-import dt from "../images/dt_6.JPG"
+import dt from "../images/dt_6.webp"
+
 import Image from "next/image";
 
 const Outro = () => {
@@ -52,8 +53,9 @@ const Outro = () => {
                 }}> 
                     <Typography variant="h5" component="h3" gutterBottom> Let's Connect </Typography>
                     <Typography variant="body1" gutterBottom> 
-                        I would love the chance to prove myself as a valuable asset. 
-                        If you think that I would make a good addition to your team, then let's talk! 
+                        I know that if given the chance I would be a valuable asset to a 
+                        web development team. If you think that I would make a good addition 
+                        to your team, then let's talk! 
                     </Typography> 
                     {/* <Typography variant="body1" className="" gutterBottom> 
                         I'm always learning and working on my next project, but experience is the best teacher by far.

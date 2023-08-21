@@ -1,13 +1,13 @@
 import Image from "next/image"
-import dt from "../images/aboutImages/dt_8.JPG"
-import kb from "../images/aboutImages/kb_3.webp"
 import dog from "../images/aboutImages/dog.webp"
+import me from "../images/aboutImages/me.webp"
+import me2 from "../images/aboutImages/me2.webp"
 
 import { Container, ImageList, ImageListItem } from "@mui/material"
 
 const list = [
-    { img: dt.src, alt: "working at my desk" },
-    { img: kb.src, alt: "my keyboard" },
+    { img: me2.src, alt: "working at my desk" },
+    { img: me.src, alt: "me smiling for the camera" },
     { img: dog.src, alt: "my dog" }
 ]
 
@@ -26,7 +26,7 @@ function populate(images) {
                             col={1} 
                             row={1}
                             style={{borderRadius: ".75rem", margin: "auto"}}
-                            />
+                        />
                 </ImageListItem>
     })
     return total
