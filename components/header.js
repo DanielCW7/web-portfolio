@@ -76,7 +76,7 @@ const Header = (props) => {
                 justifyContent: "center"
             }}>
                 
-                <Image src={props.img} fill={true} className="header_Img" priority={true} />
+                <Image placeholder="blur" src={props.img} fill={true} className="header_Img" priority={true} />
                 <Box className="gradient"></Box>
 
                 <Container sx={{ p:5 }}>

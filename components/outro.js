@@ -44,7 +44,7 @@ const Outro = () => {
                     <Image sx={{
                         borderRadius: "1rem",
                         backgroundSize: "cover"
-                    }} height="full" width="full" src={dt} /> 
+                    }} placeholder="blur" height="full" width="full" src={dt} loading="lazy" /> 
                 </Box>  
                 <Box sx={{
                     flex: "1 1 0%",
@@ -87,7 +87,7 @@ const Outro = () => {
                     <Image sx={{
                         borderRadius: "1rem",
                         backgroundSize: "cover"
-                    }} height="full" width="full" src={dt} /> 
+                    }} placeholder="blur" height="full" width="full" src={dt} loading="lazy" /> 
                 </Box>   
 
             </Container>            
