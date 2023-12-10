@@ -5,17 +5,25 @@ import Todo from "../images/Todo2.PNG"
 import Gallery from "../images/Gallery.PNG"
 import Calc from "../images/Calc2.PNG"
 import Game from "../images/Game2.PNG"
-import Tic from "../images/Tic2.PNG"
 import Directory from "../images/Directory.PNG"
+import Blog from "../images/blog.png"
 
 const list = [
+    {
+        project: "Blog app",
+        description: "This blog uses the Sanity CMS and allows me to easily create posts to be displayed on my React front end.",
+        sourceCode: "https://github.com/DanielCW7/blog-app",
+        demo: "https://daniels-blog.com/",
+        thumbnail: Blog.src,
+        badges: [ "React", "Next", "HTML/CSS/JS", "Tailwind", "Headless CMS"],
+    },
     {
         project: "Weather app",
         description: "A React-based app that provides a weather forecast location data based on user input.",
         sourceCode: "https://github.com/DanielCW7/weather-app-v1/",
         demo: "https://danielcw7.github.io/weather-app-v1/",
         thumbnail: Weather.src,
-        badges: [ "React", "JS", "HTML/CSS", "Tailwind CSS"],
+        badges: [ "React", "HTML/CSS/JS", "Tailwind "],
     },
     {
         project: "Sorting simulator",
@@ -23,7 +31,7 @@ const list = [
         sourceCode: "https://github.com/DanielCW7/sorter/",
         demo: "https://danielcw7.github.io/sorter/",
         thumbnail: Sort.src,
-        badges: [ "React", "JS", "HTML/CSS"]
+        badges: [ "React", "HTML/CSS/JS"]
     },
     {
         project: "Github finder",
@@ -31,7 +39,7 @@ const list = [
         sourceCode: "https://github.com/DanielCW7/github_finder/",
         demo: "https://danielcw7.github.io/github_finder/",
         thumbnail: Finder.src,
-        badges: [ "React", "JS", "HTML/CSS", "REST API"]
+        badges: [ "React", "HTML/CSS/JS", "REST API"]
     },
     {
         project: "Todo app",
@@ -39,7 +47,7 @@ const list = [
         sourceCode: "https://github.com/DanielCW7/todo/",
         demo: "https://danielcw7.github.io/todo/",
         thumbnail: Todo.src,
-        badges: [ "React", "JS", "HTML/CSS"]
+        badges: [ "React", "HTML/CSS/JS"]
     },
     {
         project: "Photo gallery",
@@ -47,7 +55,7 @@ const list = [
         sourceCode: "https://github.com/DanielCW7/gallery/",
         demo: "https://danielcw7.github.io/gallery/",
         thumbnail: Gallery.src,
-        badges: [ "JS", "HTML/CSS"]
+        badges: ["HTML/CSS/JS"]
     },
     {
         project: "Concrete calculator",
@@ -55,7 +63,7 @@ const list = [
         sourceCode: "https://github.com/DanielCW7/yield_calculator/",
         demo: "https://danielcw7.github.io/yield_calculator/",
         thumbnail: Calc.src,
-        badges: [ "JS", "HTML/CSS"]
+        badges: ["HTML/CSS/JS"]
     },
     {
         project: "Word game",
@@ -63,15 +71,7 @@ const list = [
         sourceCode: "https://github.com/DanielCW7/gameshow/",
         demo: "https://danielcw7.github.io/gameshow/",
         thumbnail: Game.src,
-        badges: [ "JS", "HTML/CSS"]
-    },
-    {
-        project: "Tic tac toe",
-        description: "A simple game of tictactoe utilizing JQuery.",
-        sourceCode: "https://github.com/DanielCW7/tictactoe/",
-        demo: "https://danielcw7.github.io/tictactoe/",
-        thumbnail: Tic.src,
-        badges: [ "JS", "JQuery", "HTML/CSS" ]
+        badges: ["HTML/CSS/JS"]
     },
     {
         project: "Employee directory",
@@ -79,7 +79,7 @@ const list = [
         sourceCode: "https://github.com/DanielCW7/directory/",
         demo: "https://danielcw7.github.io/directory/",
         thumbnail: Directory.src,
-        badges: [ "JS", "HTML/CSS"]
+        badges: ["HTML/CSS/JS"]
     }
 ]
 
