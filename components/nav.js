@@ -37,7 +37,6 @@ const Nav = () => {
                                 <Link onClick={() => {setNavOpen(false)}} href="/"><Typography variant="h6" component="div"> Home </Typography><Divider/></Link>
                                 <Link onClick={() => {setNavOpen(false)}}  href="/projects"><Typography variant="h6" component="div"> Projects </Typography><Divider/></Link>
                                 <Link onClick={() => {setNavOpen(false)}}  href="/about"><Typography variant="h6" component="div"> About </Typography><Divider/></Link>
-                                <Link onClick={() => {setNavOpen(false)}}  href="/resume"><Typography variant="h6" component="div"> Resume </Typography><Divider/></Link>
                             </Box>
                         </Drawer>                
                     </Box>
@@ -55,8 +54,6 @@ const Nav = () => {
                             <Link href="/"><Button color="inherit"> Home </Button></Link>
                             <Link href="/projects"><Button color="inherit"> Projects </Button></Link>
                             <Link href="/about"><Button color="inherit"> About </Button></Link>
-                            <Link href="/resume"><Button color="inherit"> Resume </Button></Link>
-
                         </Stack>
                     </Toolbar> 
 
