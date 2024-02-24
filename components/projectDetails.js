@@ -1,4 +1,4 @@
-import Sort from "../images/Sort2.PNG"
+import Auth from "../images/user-auth.png"
 import Weather from "../images/Weather2.PNG"
 import Finder from "../images/github_finder.png"
 import Todo from "../images/Todo2.PNG"
@@ -9,6 +9,14 @@ import Directory from "../images/Directory.PNG"
 import Blog from "../images/blog.png"
 
 const list = [
+    {
+        project: "User Authenticator",
+        description: "Using Auth0 for authentication, this app shows a Github user's projects. As a bonus, it presents a randomly generated character list from Rick and Morty!",
+        sourceCode: "https://github.com/DanielCW7/user-authenticator",
+        demo: "https://user-authenticator-sigma.vercel.app/",
+        thumbnail: Auth.src,
+        badges: [ "React", "Material UI", "HTML/CSS/JS", "Tailwind", "REST API"],
+    },
     {
         project: "Blog app",
         description: "This blog uses the Sanity CMS and allows me to easily create posts to be displayed on my React front end.",
@@ -23,15 +31,7 @@ const list = [
         sourceCode: "https://github.com/DanielCW7/weather-app-v1/",
         demo: "https://danielcw7.github.io/weather-app-v1/",
         thumbnail: Weather.src,
-        badges: [ "React", "HTML/CSS/JS", "Tailwind "],
-    },
-    {
-        project: "Sorting simulator",
-        description: "This application takes pre-defined sets of data and sorts them from highest to lowest using the \"bubble sort\" method.",
-        sourceCode: "https://github.com/DanielCW7/sorter/",
-        demo: "https://danielcw7.github.io/sorter/",
-        thumbnail: Sort.src,
-        badges: [ "React", "HTML/CSS/JS"]
+        badges: [ "React", "HTML/CSS/JS", "Tailwind", "REST API"],
     },
     {
         project: "Github finder",
@@ -43,7 +43,7 @@ const list = [
     },
     {
         project: "Todo app",
-        description: "A simple todo app built with React that saves todos in the current browser's local storage.",
+        description: "A simple todo app built with React that saves todos in the browser's local storage.",
         sourceCode: "https://github.com/DanielCW7/todo/",
         demo: "https://danielcw7.github.io/todo/",
         thumbnail: Todo.src,
