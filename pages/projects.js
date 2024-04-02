@@ -27,6 +27,7 @@ const Projects = () => {
             link=""
             cta=""
             img={keyboard}
+            alt="my keyboard"
           />
           <Container sx={{ 
               p: 5,

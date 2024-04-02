@@ -26,7 +26,7 @@ const Work = (props) => {
             flexDirection: "column",
             justifyContent: "space-between"
         }} key={props.project} >
-            <CardMedia sx={{ height: 140 }} image={`${props.thumbnail}`} title={props.project} />
+            <CardMedia sx={{ height: 140 }} image={`${props.thumbnail}`} title={props.project} alt={props.project} />
 
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div"> {props.project} </Typography>

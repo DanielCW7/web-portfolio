@@ -18,6 +18,7 @@ const HomePage = () => {
                 link="/projects"
                 cta="My Work"
                 img={dt}
+                alt="working on my computer"
             />
 
             <Box className="radial">

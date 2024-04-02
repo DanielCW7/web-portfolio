@@ -68,7 +68,7 @@ useEffect(() => {
     function display(list) {
         const techStack = 
         list.map(element => {
-            return <Image height="60" width="60" src={element.img.src} className="tech" alt={element.img.alt} loading="lazy" />
+            return <Image height="60" width="60" src={element.img.src} className="tech" alt={element.alt} loading="lazy" />
         });
         return techStack
         
@@ -78,11 +78,11 @@ useEffect(() => {
         {img: html, alt: "html"},
         {img: css, alt: "css"},
         {img: js, alt: "js"},
-        {img: ts, alt: "wordpress"},
+        {img: ts, alt: "typescript"},
         {img: react, alt: "react"},
         {img: tailwind, alt: "tailwind"},
         {img: node, alt: "node"},
-        {img: mui, alt: "wordpress"},
+        {img: mui, alt: "material ui"},
         {img: git, alt: "git"},
         {img: wordpress, alt: "wordpress"},
     ]

@@ -15,6 +15,7 @@ const About = () => {
                 link=""
                 cta=""
                 img={married}
+                alt="me and my wife"
             />
             <Box>
                 <Container sx={{ 
@@ -51,7 +52,7 @@ const About = () => {
                                     xs: "200px",
                                     lg: "300px"
                                 }                            
-                            }} image={headshot.src} />
+                            }} image={headshot.src} alt="professional headshot" />
                         </Card>
                     </Box>
                     <Box>
