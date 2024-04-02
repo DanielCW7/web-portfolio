@@ -4,7 +4,6 @@ import Header from "@/components/header";
 import dt from "../images/dt_3.webp"
 import AboutBlurb from "@/components/aboutBlurb";
 import Outro from "@/components/outro";
-import TypingSection from "../components/typingSection";
 import TechStack from "@/components/techStack";
 
 const HomePage = () => {    
