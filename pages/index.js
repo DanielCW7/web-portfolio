@@ -48,14 +48,10 @@ const HomePage = () => {
                         }
                     }} className="polygon radial"></Box> 
                 </Box>  
-                <Box sx={{
-                    backgroundColor: "#fff"
-                }}>
+                <Box sx={{ backgroundColor: "#fff" }}>
                     <TypingSection />                  
                 </Box>
-                <Box sx={{
-                    backgroundColor: "#fff"
-                }}>                       
+                <Box sx={{ backgroundColor: "#fff" }}>                       
                     <Outro /> 
                 </Box>
             </Box>

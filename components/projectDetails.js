@@ -1,12 +1,12 @@
-import Auth from "../images/user-auth.png"
+import Auth from "../images/user-auth.webp"
 import Weather from "../images/Weather2.PNG"
-import Finder from "../images/github_finder.png"
+import Finder from "../images/github_finder.webp"
 import Todo from "../images/Todo2.PNG"
 import Gallery from "../images/Gallery.PNG"
 import Calc from "../images/Calc2.PNG"
 import Game from "../images/Game2.PNG"
 import Directory from "../images/Directory.PNG"
-import Blog from "../images/blog.png"
+import Blog from "../images/blog.webp"
 
 const list = [
     {

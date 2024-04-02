@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Box, Container, Typography } from "@mui/material";
 
 const typingSection = () => {
 
-const adjectives = ["versatile.", "ambitious.", "adaptable.", "reliable."];
+const adjectives = ["anything.", "everything.", "today.", "tomorrow."];
 
 // types the word out 
 const typewriter = async (target, currentWord) => {
@@ -87,7 +87,7 @@ useEffect(() => {
                 xl: "4.5rem"
               }
             }} variant="h1" component="h2" gutterBottom >
-            I am <span className="typewriter" variant="h1" component="h2"></span>
+            Together, we can take on <br/><span className="typewriter" variant="h1" component="h2"></span>
           </Typography>
         </Box>                    
       </Container>             

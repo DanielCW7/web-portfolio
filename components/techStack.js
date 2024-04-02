@@ -1,4 +1,6 @@
-import { Box, Container, Typography, Card, Button } from "@mui/material"
+import { Box, Container, Typography } from "@mui/material"
+import ts from "../images/icons/ts.webp"
+import mui from "../images/icons/mui.webp"
 import html from "../images/icons/html.webp"
 import js from "../images/icons/js.webp"
 import css from "../images/icons/css.webp"
@@ -76,11 +78,13 @@ useEffect(() => {
         {img: html, alt: "html"},
         {img: css, alt: "css"},
         {img: js, alt: "js"},
+        {img: ts, alt: "wordpress"},
         {img: react, alt: "react"},
-        {img: node, alt: "node"},
-        {img: git, alt: "git"},
         {img: tailwind, alt: "tailwind"},
-        {img: wordpress, alt: "wordpress"}
+        {img: node, alt: "node"},
+        {img: mui, alt: "wordpress"},
+        {img: git, alt: "git"},
+        {img: wordpress, alt: "wordpress"},
     ]
 
     return (
@@ -109,19 +113,22 @@ useEffect(() => {
                 }}>
                     <Box sx={{
                         display: "grid",
-                        gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+                        gridTemplateColumns: {
+                            xs: "repeat(5, minmax(0, 1fr))",
+                            md: "repeat(4, minmax(0, 1fr))"
+                        },
                         columnGap: {
-                            xs: "1.75rem",
-                            lg: "2.5rem"
+                            xs: "1.0rem",
+                            lg: "2.0rem"
                         },
                         rowGap: {
-                            xs: "1.75rem",
-                            lg: "2.5rem"
+                            xs: "1.0rem",
+                            lg: "2.0rem"
                         }
 
                     }} ref={ref}>
                         {/* displays images from the array */}
-                        {tech ? display(tech) : "err"}   
+                        {tech ? display(tech) : "Still working on this!"}   
                     </Box>
                 </Box>
 
@@ -143,9 +150,9 @@ useEffect(() => {
                     <Typography variant="body1"> 
                         Since 2019, I've been on a dedicated web development journey, 
                         progressing from HTML and CSS to exploring tools like Tailwind CSS, 
-                        Nextjs, and Reactjs. Embracing both familiar and lesser-known technologies with a humble approach, 
-                        I've crafted responsive interfaces and user experiences while deepening my understanding of JavaScript. 
-                        My journey continues as I strive for excellence and innovation in the ever-evolving world of web development.
+                        Nextjs, and Reactjs. Embracing both familiar and lesser-known technologies with a learner's mindet, 
+                        I've crafted responsive interfaces and user experiences while deepening my understanding of development. 
+                        Today, my journey continues as I strive for excellence and innovation in the ever-evolving world of web development.
                     </Typography>
                 </Box>
 
