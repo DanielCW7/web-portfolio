@@ -29,6 +29,14 @@
   100% { opacity: 0;}
 }
 
+
+.typewriter {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+
 .typewriter::after {
   content: "";
   margin-left: 25px;
@@ -96,24 +104,4 @@
   margin: auto;
   opacity: 0;
 }
-/* CSS for creating a dark overlay on an <Image /> in Next.js */
 
-
-
-
-
-
-
-
-
-
-/* scroll animation */
-
-/* #threeTier div {
-  transform: translate(10px);
-  opacity: 0;
-}
-
-.appear {
-  opacity: 1;
-} */

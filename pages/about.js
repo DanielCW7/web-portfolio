@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Container, Box, Typography, Card, CardMedia } from '@mui/material';
 import Header from "@/components/header";
-import married from "../images/married.webp"
+import married from "../images/aboutImages/married.webp"
 import headshot from "../images/aboutImages/headshot.webp"
 
 const About = () => {    
