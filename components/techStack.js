@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material"
+import { Box, Button, Container, Typography } from "@mui/material"
 import ts from "../images/icons/ts.webp"
 import mui from "../images/icons/mui.webp"
 import html from "../images/icons/html.webp"
@@ -12,7 +12,7 @@ import node from "../images/icons/node.webp"
 import Image from "next/image"
 import { useState, useRef, useEffect } from "react";
 import anime from "animejs";
-
+// import DownloadIcon from '@mui/icons-material/Download';
 
 const TechStack = () => {
 
@@ -147,13 +147,14 @@ useEffect(() => {
                         },
                         fontWeight: 900
                     }}> My Experience </Typography>
-                    <Typography variant="body1"> 
+                    <Typography variant="body1" sx={{ marginBottom: "25px"}}> 
                         Since 2019, I've been on a dedicated web development journey, 
                         progressing from HTML and CSS to exploring tools like Tailwind CSS, 
                         Nextjs, and Reactjs. Embracing both familiar and lesser-known technologies with a learner's mindet, 
                         I've crafted responsive interfaces and user experiences while deepening my understanding of development. 
                         Today, my journey continues as I strive for excellence and innovation in the ever-evolving world of web development.
                     </Typography>
+                    {/* <Button variant="outlined" sx={{ width: "max-content"}} startIcon={<DownloadIcon/>}> Download Resume </Button> */}
                 </Box>
 
             </Container>

@@ -21,14 +21,10 @@ const HomePage = () => {
             />
 
             <Box className="radial">
-                <Box sx={{
-                    backgroundColor: "#fff"
-                }}>
+                <Box sx={{ backgroundColor: "#fff" }}>
                     <TechStack />
                 </Box>
-                <Box sx={{
-                    backgroundColor: "#fff"
-                }}>
+                <Box sx={{ backgroundColor: "#fff" }}>
                     <Box sx={{
                         height: {
                             xs: "4rem",
@@ -37,9 +33,7 @@ const HomePage = () => {
                     }} className="polygon2 radial"></Box>
                 </Box> 
                 <AboutBlurb />                  
-                <Box sx={{
-                    backgroundColor: "#fff"
-                }}>
+                <Box sx={{ backgroundColor: "#fff" }}>
                     <Box sx={{
                         height: {
                             xs: "4rem",
