@@ -28,7 +28,6 @@ const Contact = () => {
                         <Link underline="hover" className="cursor-pointer" href="https://www.linkedin.com/in/daniel-connor-wilson-a67706177/"><LinkedInIcon/> LinkedIn </Link>
                         <Link underline="hover" className="cursor-pointer" href="https://github.com/DanielCW7"><GitHubIcon/> Github </Link> 
                         <Link underline="hover" className="cursor-pointer" href="mailto:dev.danielcw@gmail.com"><EmailIcon/> dev.danielcw@gmail.com </Link>                        
-                        <Link underline="hover" className="cursor-pointer" href="tel:6157964896"><LocalPhoneIcon/> 615-796-4896 </Link>                        
                     </Box>
 
                 </Container>
