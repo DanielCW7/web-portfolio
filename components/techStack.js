@@ -1,5 +1,4 @@
 import { Box, Button, Container, Typography } from "@mui/material"
-import ts from "../images/icons/ts.webp"
 import mui from "../images/icons/mui.webp"
 import html from "../images/icons/html.webp"
 import js from "../images/icons/js.webp"
@@ -9,6 +8,7 @@ import git from "../images/icons/git.webp"
 import tailwind from "../images/icons/tailwind.webp"
 import wordpress from "../images/icons/wordpress.webp"
 import node from "../images/icons/node.webp"
+import py from "../images/icons/py.png"
 import Image from "next/image"
 import { useState, useRef, useEffect } from "react";
 import anime from "animejs";
@@ -75,16 +75,16 @@ useEffect(() => {
     }
 
     const tech = [
-        {img: html, alt: "html"},
-        {img: css, alt: "css"},
-        {img: js, alt: "js"},
-        {img: ts, alt: "typescript"},
-        {img: react, alt: "react"},
-        {img: tailwind, alt: "tailwind"},
-        {img: node, alt: "node"},
-        {img: mui, alt: "material ui"},
-        {img: git, alt: "git"},
-        {img: wordpress, alt: "wordpress"},
+        {img: html, alt: "Html"},
+        {img: css, alt: "Css"},
+        {img: js, alt: "Javascript"},
+        {img: react, alt: "React"},
+        {img: tailwind, alt: "Tailwind"},
+        {img: node, alt: "Node"},
+        {img: mui, alt: "Material UI"},
+        {img: git, alt: "Git"},
+        {img: wordpress, alt: "Wordpress"},
+        {img: py, alt: "Python"}
     ]
 
     return (
